@@ -1,57 +1,64 @@
 # 大三房+書房+車位+全套傢俱，近三信公園，漢口路｜大成都 2F-1
+## 4-Room Luxury Residence with Parking @ Da Chengdu | 大成都レジデンス 2F-1
 
 > 🏷️ **591 房屋交易網優選好屋**：[https://rent.591.com.tw/21828684](https://rent.591.com.tw/21828684)（物件編號：`21828684`）  
 > 🔗 **專屬短網址**: [https://pse.is/9gpk9w](https://pse.is/9gpk9w)  
-> 🌐 **GitHub Pages 線上互動式專頁**: [https://howardliao.github.io/House01/](https://howardliao.github.io/House01/)  
-> 📍 **建物座落地點**：台中市西屯區成都路 218 號 2 樓之 1（大成都社區）  
-> 📱 **屋主直租（免服務費・仲介勿擾）**：廖先生 ｜ 電話/LINE：`0975-323161`  
+> 🌐 **GitHub Pages 線上互動式專頁 (支援 繁中 / EN / 日語 切換)**: [https://howardliao.github.io/House01/](https://howardliao.github.io/House01/)  
+> 📍 **建物座落地點**：台中市西屯區成都路 218 號 2 樓之 1（大成都華廈社區）  
+> 📱 **屋主直租（免仲介服務費・仲介勿擾）**：廖先生 ｜ 電話/LINE：`0975-323161`  
 
 ---
 
-## 🌟 591 刊登亮點與特色標籤 (591 Features & Badges)
+## 🌐 三語語言支援 (Trilingual Interface: ZH / EN / JA)
 
-* 🏷️ **屋主直租**：屋主本人直接發佈，溝通零時差，**免收仲介服務費**（仲介勿擾）。
-* 💰 **可申請租金補貼**：符合政府 300 億租金補貼專案資格者可申報租賃補貼。
-* 🧳 **拎包入住**：全套傢俱家電齊備（3+1 沙發、1+4 餐桌、8 尺衣櫃、雙人床組、OA 辦公桌、180cm 原木大工作桌、冷氣、冰箱、洗衣機、電視、熱水器、瓦斯爐）。
-* 🚗 **含機械車位 1 位**：租金已內含專屬機械汽車停車位，自用車與機車通勤無憂。
-* 🗑️ **專人集中垃圾清運**：社區專人集中處理垃圾與資源回收，**免追垃圾車**。
-* 🍳 **可開伙**：獨立廚房接通天然瓦斯管線，附雙口瓦斯爐與抽油煙機。
-* 🛗 **電梯大樓・RC結構**：華廈電梯 2F / 8F，公設比僅 **20.58%**，實坪高達 **33 坪**（使用率達 80%）。
-* 🚇 **交通樞紐**：鄰近台中捷運綠線「文華高中站」步行數分鐘；緊鄰中清路、漢口路、台灣大道主要幹道。
+線上互動式租賃專頁 [https://howardliao.github.io/House01/](https://howardliao.github.io/House01/) 支援頂部 **繁中 (Traditional Chinese) / EN (English) / 日本語 (Japanese)** 一鍵無縫切換，包含全站標題、物件規格、格局解析、生活機能、租賃公約、費用試算器及預約訊息產生器。
 
 ---
 
-## 📊 基本產權與規格清單 (Property Specifications)
+## 🌟 591 刊登亮點與特色標籤 (Highlights / 特徴)
 
-| 項目 (Item) | 591 刊登規格與說明 (Chinese) | English Description |
-| :--- | :--- | :--- |
-| **591 刊登案名** | 大三房+書房+車位+全套傢俱，近三信公園，漢口路 | Spacious 3-Bed + Study + Parking + Furnished |
-| **社區名稱** | 大成都（大成都一期，電梯華廈社區） | Da Chengdu Phase 1 (Elevator Apartment) |
-| **建物門牌** | 台中市西屯區成都路 218 號 2 樓之 1 | 2F.-1, No. 218, Chengdu Rd., Xitun Dist., Taichung |
-| **郵遞區號 / 里別** | 40751 台中市西屯區何源里 | 40751, Heyuan Li, Xitun Dist., Taichung City |
-| **行政生活圈** | 台中市西屯區（四期重劃區生活圈） | Phase 4 Urban Renewal Living Zone |
-| **建物型態 / 用途** | 華廈（電梯大樓，鋼筋混凝土 RC 結構）／ 住家用 | Mid-rise with Elevator (RC Structure) / Residential |
-| **樓層規劃** | 地上 8 層 ／ 本戶位於 2 樓 (2F / 8F) | 8 Floors Total / Unit on 2nd Floor |
-| **社區總戶數** | 約 40 戶（住戶單純、管理嚴謹） | Approx. 40 units total, boutique & quiet |
-| **實價登錄坪數** | **41.02 坪**（含公設與 1 個機械車位） | 41.02 Ping (incl. Parking & Common Area) |
-| **室內實用坪數** | **約 33 坪**（使用得房率高達 80%） | Approx. 33 Ping usable indoor space (~80%) |
-| **公共設施坪數** | 約 8 坪（超低公設比 **20.58%**） | Approx. 8 Ping common area (Ratio: 20.58%) |
-| **土地持分** | 約 7.1 坪（社區共有） | Approx. 7.1 Ping shared land |
-| **空間格局** | **3 房 1 書房 2 廳 1 衛 2 陽台** | 3 Bedrooms + 1 Study + 2 Living + 1 Bath + 2 Balconies |
-| **停車位** | 機械式車位 1 位（已計入權狀並內含於租金中） | 1 Mechanical Parking Space (Included in rent) |
-| **社區管理** | 日間警衛管理、專人集中垃圾清運、中庭花園 | Daytime guard, trash pickup, courtyard |
+* 🏷️ **屋主直租 (Direct by Owner / オーナー直募)**：屋主本人直接發佈，溝通零時差，**免收仲介服務費**（仲介勿擾）。
+* 💰 **可申請租金補貼 (Rent Subsidy Eligible / 政府家賃補助対応)**：符合政府 300 億租金補貼專案資格者可申報租賃補貼。
+* 🧳 **拎包入住 (Move-in Ready / 家具家電完備)**：全套傢俱家電齊備（3+1 沙發、1+4 餐桌、8 尺衣櫃、雙人床組、OA 辦公桌、180cm 原木大工作桌、冷氣、電視、冰箱、洗衣機、熱水器、瓦斯爐）。
+* 🚗 **含機械車位 1 位 (Mech Parking Included / 機械式駐車場込み)**：租金已內含專屬機械汽車停車位，自用車與機車通勤無憂。
+* 🗑️ **專人集中垃圾清運 (Centralized Trash / 専用ゴミ回収)**：社區專人集中處理垃圾與資源回收，**免追垃圾車**。
+* 🍳 **可開伙 (Cooking Allowed / 自炊調理可)**：獨立廚房接通天然瓦斯管線，附雙口瓦斯爐與抽油煙機。
+* 🛗 **電梯大樓・RC結構 (Elevator RC Building / エレベーター付RC造)**：華廈電梯 2F / 8F，公設比僅 **20.58%**，實坪高達 **33 坪**（使用率達 80%）。
+* 🚇 **交通樞紐 (MRT Hub / 交通至便)**：鄰近台中捷運綠線「文華高中站」步行數分鐘；緊鄰中清路、漢口路、台灣大道主要幹道。
 
 ---
 
-## 💰 591 刊登租賃條件與費用明細 (Leasing Terms & Expenses)
+## 📊 基本產權與規格清單 (Property Specifications / 物件仕様)
 
-* **591 刊登月租金**：**NT$ 23,999 元 / 月**（**租金包含 1 個機械車位租金**）。
-* **押金約定**：**2 個月租金**（NT$ 47,998 元）。
-* **社區管理費**：約 **NT$ 3,300 元 / 月**（依管委會收費標準）。
-* **最短租期**：**一年**（隨時可遷入，長租優先）。
-* **身分要求**：學生、上班族、家庭、科技業主管/工程師。
-* **寵物約定**：**不可養寵物**（維持實木與 OA 家具整潔高品質）。
-* **開伙約定**：**可開伙**（天然瓦斯爐）。
+| 項目 (Item) | 正體中文說明 (Traditional Chinese) | English Description | 日本語仕様 (Japanese) |
+| :--- | :--- | :--- | :--- |
+| **591 刊登案名** | 大三房+書房+車位+全套傢俱，近三信公園，漢口路 | Spacious 3-Bed + Study + Parking + Furnished | 広々3LDK+書斎+駐車場+全家具家電付 |
+| **社區名稱** | 大成都（大成都一期，電梯華廈社區） | Da Chengdu Phase 1 (Elevator Apartment) | 大成都（第一期・エレベーター付マンション） |
+| **建物門牌** | 台中市西屯區成都路 218 號 2 樓之 1 | 2F.-1, No. 218, Chengdu Rd., Xitun, Taichung | 台湾台中市西屯区成都路218号2階-1 |
+| **郵遞區號 / 里別** | 40751 台中市西屯區何源里 | 40751, Heyuan Li, Xitun Dist., Taichung | 40751 台中市西屯区何源里 |
+| **行政生活圈** | 台中市西屯區（四期重劃區生活圈） | Phase 4 Urban Renewal Living Zone | 西屯区（第4期再開発生活圏） |
+| **建物型態 / 用途** | 華廈（電梯大樓，RC 鋼筋混凝土）／ 住家用 | Mid-rise with Elevator (RC Structure) / Residential | マンション（エレベーター付 RC造） / 住居専用 |
+| **樓層規劃** | 地上 8 層 ／ 本戶位於 2 樓 (2F / 8F) | 8 Floors Total / Unit on 2nd Floor | 地上8階建 / 所在階2階 (2F / 8F) |
+| **社區總戶數** | 約 40 戶（住戶單純、管理嚴謹） | Approx. 40 units total, boutique & quiet | 約40戸（静かで安心な住環境） |
+| **實價登錄坪數** | **41.02 坪**（含公設與 1 個機械車位） | 41.02 Ping (incl. Parking & Common Area) | 41.02坪 (約135.6㎡ 駐車場・共用部含) |
+| **室內實用坪數** | **約 33 坪**（使用得房率高達 80%） | Approx. 33 Ping usable indoor space (~80%) | 約33坪 (約109㎡ 実効専有率80%) |
+| **公共設施坪數** | 約 8 坪（超低公設比 **20.58%**） | Approx. 8 Ping common area (Ratio: 20.58%) | 約8坪（超低共用比率 20.58%） |
+| **土地持分** | 約 7.1 坪（社區共有） | Approx. 7.1 Ping shared land | 約7.1坪（共有人共有持分） |
+| **空間格局** | **3 房 1 書房 2 廳 1 衛 2 陽台** | 3 Bedrooms + 1 Study + 2 Living + 1 Bath + 2 Balconies | 3LDK+独立書斎+前後2面バルコニー |
+| **停車位** | 機械式車位 1 位（已計入權狀並內含於租金） | 1 Mechanical Parking Space (Included in rent) | 機械式駐車場1台分（賃料に含む） |
+| **社區管理** | 日間警衛管理、專人集中垃圾清運、中庭花園 | Daytime guard, trash pickup, courtyard | 日勤警備員常駐、専用ゴミ回収、中庭 |
+
+---
+
+## 💰 租賃條件與費用明細 (Leasing Terms & Expenses / 賃貸条件)
+
+* **591 刊登月租金 (Monthly Rent / 月額賃料)**：**NT$ 23,999 元 / 月**（**租金包含 1 個機械車位租金**）。
+* **押金約定 (Security Deposit / 敷金)**：**2 個月租金**（NT$ 47,998 元）。
+* **社區管理費 (Management Fee / 共益費)**：約 **NT$ 3,300 元 / 月**（依管委會收費標準）。
+* **最短租期 (Min. Lease / 最短契約期間)**：**一年**（隨時可遷入，長租優先）。
+* **身分要求 (Tenant Profile / 入居対象)**：學生、上班族、家庭、科技業主管/工程師。
+* **寵物約定 (Pet Policy / ペット飼育)**：**不可養寵物 (No Pets / 不可)**（維持實木與 OA 家具整潔高品質）。
+* **開伙約定 (Cooking / 自炊調理)**：**可開伙 (Cooking OK / 可)**（天然瓦斯爐）。
 * **水電瓦斯費用（公營單據實報實銷）**：
   * **水費**：台灣自來水公司帳單。
   * **電費**：台灣電力公司帳單。
@@ -60,7 +67,7 @@
 
 ---
 
-## 📍 591 實測周邊站點與生活機能 (Transit & Neighborhood Distances)
+## 📍 591 實測周邊站點與生活機能 (Transit & Neighborhood / 周辺施設)
 
 ### 交通與站點距離 (591 實測)
 * 🚌 **公車 中華國小站**：約 **252 公尺**
@@ -82,9 +89,9 @@
 
 ---
 
-## 🛋️ 全套家具與家電配備 (Inventory)
+## 🛋️ 全套家具與家電配備 (Inventory / 家具・設備一覧)
 
-### 家電設備
+### 家電設備 (Appliances)
 - **冷氣空調**：分離式 / 窗型，運轉良好。
 - **電視機**：1 台。
 - **電冰箱**：1 台。
@@ -92,7 +99,7 @@
 - **熱水器**：1 台。
 - **天然瓦斯**：欣中天然瓦斯已接管。
 
-### 家具配置
+### 家具配置 (Furniture)
 - **雙人床組**：2 套（含床架與床墊）。
 - **八尺大衣櫃**：1 組（主臥室超大收納）。
 - **客廳沙發**：3+1 人座沙發 1 組。
@@ -102,7 +109,7 @@
 
 ---
 
-## 📜 租賃生活公約 (House Rules)
+## 📜 租賃生活公約 (House Rules / ハウスルール)
 
 1. **【全面嚴禁吸菸】**：全室室內、前後陽台及梯間公共區域嚴格禁菸（含電子煙）。
 2. **【不可養寵物】**：為維護家具設備清潔，嚴禁飼養各類寵物。
@@ -113,9 +120,9 @@
 
 ---
 
-## 📱 預約看屋私訊格式 (Viewing Appointment Template)
+## 📱 預約看屋私訊格式 (Viewing Appointment Template / 内見予約)
 
-請私訊 LINE 或簡訊發送以下資訊：
+### 正體中文格式
 ```text
 您好！我想預約看台中【大成都社區 2F-1】出租物件 (591: 21828684)：
 • 姓名/稱呼：
@@ -125,4 +132,27 @@
 • 期望看屋時段：
 謝謝！
 ```
+
+### English Format
+```text
+Hello! I would like to schedule a viewing for Da Chengdu 2F-1 (591: 21828684):
+• Name: 
+• Occupants: 
+• Profession: 
+• Expected Move-in: 
+• Preferred Viewing Time: 
+Thank you Mr. Liao!
+```
+
+### 日本語フォーマット
+```text
+こんにちは！台中【大成都レジデンス 2F-1】(591: 21828684)の内見を希望します：
+• お名前：
+• 入居人数：
+• ご職業：
+• 入居希望時期：
+• 内見希望日時：
+よろしくお願いいたします。
+```
+
 * **聯絡電話 / LINE ID**：`0975-323161`（屋主 廖先生）
