@@ -57,14 +57,14 @@
     }
 
     .glass-card {
-      background: rgba(17, 24, 39, 0.82);
+      background: rgba(17, 24, 39, 0.85);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
     
     .glass-card-hover:hover {
-      background: rgba(31, 41, 55, 0.92);
+      background: rgba(31, 41, 55, 0.95);
       border-color: rgba(16, 185, 129, 0.35);
       transform: translateY(-2px);
       box-shadow: 0 16px 32px -10px rgba(16, 185, 129, 0.18);
@@ -134,12 +134,13 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-300">
+        <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-300">
           <a href="#overview" class="hover:text-emerald-400 transition" data-zh="物件概況" data-en="Overview" data-ja="物件概要">物件概況</a>
           <a href="#gallery" class="hover:text-emerald-400 transition" data-zh="實景格局" data-en="Gallery & Plan" data-ja="写真・間取り">實景格局</a>
           <a href="#inventory" class="hover:text-emerald-400 transition" data-zh="家具設備" data-en="Amenities" data-ja="家具・設備">家具設備</a>
+          <a href="#sop-guidelines" class="hover:text-emerald-400 transition text-emerald-400 font-semibold" data-zh="帶看與管理規範" data-en="Viewing & SOP" data-ja="内見・管理規定">帶看與管理規範</a>
           <a href="#location" class="hover:text-emerald-400 transition" data-zh="生活機能" data-en="Location" data-ja="周辺環境">生活機能</a>
-          <a href="#rules" class="hover:text-emerald-400 transition" data-zh="租賃規範" data-en="Rules" data-ja="賃貸規約">租賃規範</a>
+          <a href="#rules" class="hover:text-emerald-400 transition" data-zh="租賃公約" data-en="Rules" data-ja="賃貸規約">租賃公約</a>
           <a href="#calculator" class="hover:text-emerald-400 transition" data-zh="費用試算" data-en="Calculator" data-ja="費用計算">費用試算</a>
         </nav>
 
@@ -179,6 +180,7 @@
       <a href="#overview" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="物件概況" data-en="Overview" data-ja="物件概要">物件概況</a>
       <a href="#gallery" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="實景照片與格局" data-en="Gallery & Plan" data-ja="写真・間取り">實景照片與格局</a>
       <a href="#inventory" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="家具家電清單" data-en="Amenities" data-ja="家具・家電リスト">家具家電清單</a>
+      <a href="#sop-guidelines" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-emerald-400 hover:bg-emerald-500/10 font-semibold" data-zh="帶看與仲介管理說明書" data-en="Viewing & SOP Guidelines" data-ja="内見・仲介管理規定">帶看與仲介管理說明書</a>
       <a href="#location" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="周邊生活機能與交通" data-en="Location" data-ja="周辺環境・アクセス">周邊生活機能與交通</a>
       <a href="#rules" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="租賃規範與生活公約" data-en="Rules" data-ja="賃貸規約・ハウスルール">租賃規範與生活公約</a>
       <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="每月預算費用試算" data-en="Calculator" data-ja="毎月の費用シミュレーション">每月預算費用試算</a>
@@ -214,7 +216,7 @@
         </span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold">
           <i data-lucide="car" class="w-3.5 h-3.5"></i>
-          <span data-zh="含機械車位 1 位" data-en="Incl. 1 Mech Parking" data-ja="機械式駐車場1台込み">含機械車位 1 位</span>
+          <span data-zh="含專屬固定機械車位" data-en="Dedicated Mech Parking" data-ja="専用機械式駐車場付">含專屬固定機械車位</span>
         </span>
         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
           <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
@@ -262,10 +264,10 @@
               <span data-zh="預約現場看屋" data-en="Schedule a Viewing" data-ja="内見を予約する">預約現場看屋</span>
             </a>
             
-            <button onclick="copyLineTemplate()" class="px-5 py-3.5 rounded-xl bg-gray-800 hover:bg-gray-750 text-gray-200 border border-gray-700 hover:border-emerald-500/50 font-semibold text-sm transition flex items-center gap-2">
-              <i data-lucide="copy" class="w-4 h-4 text-emerald-400"></i>
-              <span data-zh="複製看屋預約範本" data-en="Copy Inquiry Template" data-ja="予約メッセージをコピー">複製看屋預約範本</span>
-            </button>
+            <a href="#sop-guidelines" class="px-5 py-3.5 rounded-xl bg-gray-800 hover:bg-gray-750 text-emerald-300 border border-emerald-500/30 hover:border-emerald-500/60 font-semibold text-sm transition flex items-center gap-2">
+              <i data-lucide="book-open" class="w-4 h-4 text-emerald-400"></i>
+              <span data-zh="帶看管理說明書" data-en="Viewing & SOP Guidelines" data-ja="内見・管理説明書">帶看管理說明書</span>
+            </a>
 
             <a href="https://line.me/ti/p/~0975323161" target="_blank" class="px-4 py-3.5 rounded-xl bg-[#06C755]/15 hover:bg-[#06C755]/25 text-[#06C755] border border-[#06C755]/30 font-semibold text-sm transition flex items-center gap-2">
               <i data-lucide="message-circle" class="w-4 h-4"></i>
@@ -661,79 +663,128 @@
     </div>
   </section>
 
-  <!-- Section 3: Detailed Floor Plan & Room Breakdown -->
-  <section class="py-16 bg-gray-900/40 border-t border-gray-800">
+  <!-- Section 3: Comprehensive SOP & Management Guidelines (Integrated from Google Doc) -->
+  <section id="sop-guidelines" class="py-16 bg-gray-950/70 border-t border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider" data-zh="FLOOR PLAN DETAILS" data-en="FLOOR PLAN DETAILS" data-ja="FLOOR PLAN DETAILS">FLOOR PLAN DETAILS</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-zh="3. 格局明細與空間配置" data-en="3. Floor Plan & Space Allocation" data-ja="3. 間取り詳細・空間レイアウト">3. 格局明細與空間配置</h2>
-        <p class="text-sm text-gray-400 mt-1" data-zh="大三房+獨立書房二廳一衛二陽台，滿足家庭生活、居家辦公與收納多元需求" data-en="3 Beds + 1 Study + 2 Living/Dining + 1 Bath + 2 Balconies for family living and remote work." data-ja="3ベッドルーム＋独立書斎＋2リビング/ダイニング＋前後2バルコニーで、快適な暮らしとリモートワークを両立。">大三房+獨立書房二廳一衛二陽台，滿足家庭生活、居家辦公與收納多元需求</p>
+        <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider" data-zh="MANAGEMENT MANUAL & VIEWING SOP" data-en="MANAGEMENT MANUAL & VIEWING SOP" data-ja="MANAGEMENT MANUAL & VIEWING SOP">MANAGEMENT MANUAL & VIEWING SOP</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-zh="大成都 2F 住家出租與帶看管理說明書" data-en="Viewing Management & Broker SOP Guidelines" data-ja="大成都 2F 賃貸管理・内見SOP説明書">大成都 2F 住家出租與帶看管理說明書</h2>
+        <p class="text-sm text-gray-400 mt-1" data-zh="整合房仲作業SOP、來訪客戶基本表、入屋復原規範、隱私監控與寵物特約等八大管理章則" data-en="Comprehensive 8-part management protocol: Broker SOP, Visitor Profile, Reset Protocol, Privacy & Pet Addendum." data-ja="仲介業者SOP、来訪者アンケート、原状復帰手順、防犯カメラ規定、ペット特約等の8大管理規程を完全統合。">整合房仲作業SOP、來訪客戶基本表、入屋復原規範、隱私監控與寵物特約等八大管理章則</p>
       </div>
 
+      <!-- 8 Pillars Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Room 1: Master Bedroom -->
+        <!-- SOP 1: Broker & Agent SOP -->
         <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-emerald-500/40 transition">
           <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
-            <i data-lucide="bed-double" class="w-5 h-5"></i>
+            <i data-lucide="badge-check" class="w-5 h-5"></i>
           </div>
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-white text-base" data-zh="主臥室 (B房)" data-en="Master Bedroom (B)" data-ja="主寝室 (B室)">主臥室 (B房)</h4>
-            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 font-semibold" data-zh="主臥" data-en="Master" data-ja="主寝室">主臥</span>
-          </div>
-          <ul class="mt-3 space-y-2 text-xs text-gray-300">
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> <span data-zh="附八尺大衣櫃（收納量大）" data-en="8-foot large wardrobe" data-ja="8尺大型ワードローブ（大容量収納）">附八尺大衣櫃（收納量大）</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> <span data-zh="附雙人床架與舒適床墊" data-en="Double bed frame & mattress" data-ja="ダブルベッドフレーム・マットレス付">附雙人床架與舒適床墊</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> <span data-zh="採光大窗、空氣流通" data-en="Large window, bright & airy" data-ja="大型採光窓で日当たり・通風良好">採光大窗、空氣流通</span></li>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="一、房仲公司與帶看規範" data-en="1. Broker & Viewing SOP" data-ja="1. 仲介業者・内見SOP">一、房仲公司與帶看規範</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> <span data-zh="提供公司統編、負責人與經紀人證照字號" data-en="Brokerage registration & agent license required" data-ja="会社統編・代表者・宅建免許番号の提出">提供公司統編、負責人與經紀人證照字號</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> <span data-zh="帶看限 09:00-12:00 / 14:00-21:00 (最長30分)" data-en="Hours: 09:00-12:00, 14:00-21:00 (max 30m)" data-ja="内見時間: 09-12時 / 14-21時 (最長30分)">帶看限 09:00-12:00 / 14:00-21:00 (最長30分)</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> <span data-zh="穿識別背心、同業每次上限5人、禁菸檳酒" data-en="Vest required; max 5 agents; no smoking/alcohol" data-ja="識別ベスト着用、同時上限5名、禁煙・禁酒">穿識別背心、同業每次上限5人、禁菸檳酒</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> <span data-zh="成交服務費為半個月租金 (房東3個月後支付)" data-en="Broker fee: 0.5 mo. rent paid 3 mos. after lease" data-ja="成約手数料は賃料半月分（成約3ヶ月後支払）">成交服務費為半個月租金 (房東3個月後支付)</span></li>
           </ul>
         </div>
 
-        <!-- Room 2: Secondary Bedrooms (A & C) -->
+        <!-- SOP 2: Visitor Profile Form -->
         <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-blue-500/40 transition">
           <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3">
-            <i data-lucide="bed" class="w-5 h-5"></i>
+            <i data-lucide="clipboard-list" class="w-5 h-5"></i>
           </div>
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-white text-base" data-zh="次臥室 (A房 / C房)" data-en="Secondary Beds (A/C)" data-ja="洋室・寝室 (A室 / C室)">次臥室 (A房 / C房)</h4>
-            <span class="text-xs px-2 py-0.5 rounded bg-blue-500/15 text-blue-400 font-semibold" data-zh="2間次臥" data-en="2 Bedrooms" data-ja="2部屋">2間次臥</span>
-          </div>
-          <ul class="mt-3 space-y-2 text-xs text-gray-300">
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> <span data-zh="附床組（床架與床墊）" data-en="Bed frames & mattresses" data-ja="ベッドセット（フレーム・マットレス）完備">附床組（床架與床墊）</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> <span data-zh="方正採光、空間舒適" data-en="Square layout with daylight" data-ja="スクエアで使いやすい間取り">方正採光、空間舒適</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i> <span data-zh="適合小孩、長輩或客房" data-en="For children, parents or guests" data-ja="子供部屋、ゲストルームに最適">適合小孩、長輩或客房</span></li>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="二、來訪客戶基本資料表" data-en="2. Visitor Profile Form" data-ja="2. 来訪者アンケート">二、來訪客戶基本資料表</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5"></i> <span data-zh="預約資訊：看房具體日期與時間" data-en="Viewing date & precise time slot" data-ja="内見希望日時・具体的時間帯">預約資訊：看房具體日期與時間</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5"></i> <span data-zh="居住人數、同住親友關係及預計起租日" data-en="Number of occupants, relations & move-in date" data-ja="入居人数・家族構成・入居希望日">居住人數、同住親友關係及預計起租日</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5"></i> <span data-zh="職業產業、抽菸習慣、是否申請租補" data-en="Profession, smoking habits, subsidy requirements" data-ja="ご職業・喫煙有無・家賃補助申請の有無">職業產業、抽菸習慣、是否申請租補</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5"></i> <span data-zh="附工作證明、良民證或財力信用證明" data-en="Proof of employment, police clearance, finance proof" data-ja="在職証明書・良民証・信用証明書の準備">附工作證明、良民證或財力信用證明</span></li>
           </ul>
         </div>
 
-        <!-- Room 3: Independent Study / Home Office -->
-        <div class="glass-card rounded-2xl p-5 border border-purple-500/30 bg-purple-950/20 hover:border-purple-500/50 transition">
+        <!-- SOP 3: Entry & Exit Reset Protocol -->
+        <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-purple-500/40 transition">
           <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
-            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <i data-lucide="footprints" class="w-5 h-5"></i>
           </div>
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-white text-base" data-zh="獨立書房 / 工作室 (D房)" data-en="Study / Office (D)" data-ja="独立書斎・ワークルーム (D室)">獨立書房 / 工作室 (D房)</h4>
-            <span class="text-xs px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-semibold" data-zh="遠距辦公首選" data-en="WFH Ready" data-ja="テレワーク対応">遠距辦公首選</span>
-          </div>
-          <ul class="mt-3 space-y-2 text-xs text-gray-300">
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> <span data-zh="附 2 套 OA 專業辦公桌" data-en="2 Sets of professional OA desks" data-ja="OAオフィスデスク2台完備">附 2 套 OA 專業辦公桌</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> <span data-zh="附 180×80 cm 原木大工作桌" data-en="180×80 cm solid wood table" data-ja="180×80cm 大型天然無垢材デスク付">附 180×80 cm 原木大工作桌</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> <span data-zh="獨立寧靜空間，居家開會專注" data-en="Quiet room for focus & meetings" data-ja="静音環境でWeb会議や集中作業に最適">獨立寧靜空間，居家開會專注</span></li>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="三、入屋與離屋復原規範" data-en="3. Entry & Exit SOP" data-ja="3. 入退室・原状復帰SOP">三、入屋與離屋復原規範</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5"></i> <span data-zh="玄關更換室內拖鞋，原鞋集中指定區" data-en="Change to slippers; original shoes grouped at foyer" data-ja="玄関でスリッパに履き替え、靴は指定位置へ">玄關更換室內拖鞋，原鞋集中指定區</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5"></i> <span data-zh="離屋時拖鞋排成一直線，鞋頭朝向指定方向" data-en="Slippers aligned in straight line facing set direction" data-ja="退出時はスリッパを直線上に整列">離屋時拖鞋排成一直線，鞋頭朝向指定方向</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5"></i> <span data-zh="冷氣/電視/浴室遙控器依序歸位、家具復位" data-en="Remotes ordered by sequence; furniture reset" data-ja="リモコン類は指定順に並べ、家具を元通りに">冷氣/電視/浴室遙控器依序歸位、家具復位</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400 shrink-0 mt-0.5"></i> <span data-zh="關閉門窗冷氣與總開關，拍照回傳確認" data-en="Close windows, AC, main switch; photo report" data-ja="窓・エアコン・主電源を切り、写真送信確認">關閉門窗冷氣與總開關，拍照回傳確認</span></li>
           </ul>
         </div>
 
-        <!-- Room 4: Living, Dining, Kitchen & Dual Balconies -->
+        <!-- SOP 4: Surveillance & Privacy -->
         <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-amber-500/40 transition">
           <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
-            <i data-lucide="utensils" class="w-5 h-5"></i>
+            <i data-lucide="video" class="w-5 h-5"></i>
           </div>
-          <div class="flex items-center justify-between">
-            <h4 class="font-bold text-white text-base" data-zh="公共區域與雙陽台" data-en="Public Area & Balconies" data-ja="共用エリア・2面バルコニー">公共區域與雙陽台</h4>
-            <span class="text-xs px-2 py-0.5 rounded bg-amber-500/15 text-amber-400 font-semibold" data-zh="雙陽台" data-en="2 Balconies" data-ja="2面バルコニー">雙陽台</span>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="四、監控設備與隱私保護" data-en="4. Surveillance & Privacy" data-ja="4. 防犯カメラ・プライバシー">四、監控設備與隱私保護</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i> <span data-zh="玄關出入口設置監控防盜，影像不公開" data-en="Foyer camera for security only; not published" data-ja="玄関出入口に防犯カメラ設置（非公開）">玄關出入口設置監控防盜，影像不公開</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i> <span data-zh="臥室浴室絕對不設監控錄音，嚴守隱私" data-en="Zero cameras in bedrooms/bathrooms; privacy intact" data-ja="寝室・浴室には一切カメラなし、人権保護">臥室浴室絕對不設監控錄音，嚴守隱私</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i> <span data-zh="簽約前書面列明並取得承租人同意" data-en="Written disclosure & signed consent prior to signing" data-ja="契約前に書面明示し入居者の同意を取得">簽約前書面列明並取得承租人同意</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5"></i> <span data-zh="嚴禁故意遮蔽鏡頭或為不當行為" data-en="Tampering or obstructing camera strictly banned" data-ja="カメラの意図的な遮蔽や妨害行為を禁止">嚴禁故意遮蔽鏡頭或為不當行為</span></li>
+          </ul>
+        </div>
+
+        <!-- SOP 5: Community Rules & Eviction Mechanism -->
+        <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-teal-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-3">
+            <i data-lucide="scale" class="w-5 h-5"></i>
           </div>
-          <ul class="mt-3 space-y-2 text-xs text-gray-300">
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> <span data-zh="客廳附 3+1 沙發組" data-en="3+1 sofa in living room" data-ja="リビング 3+1人掛けソファ付">客廳附 3+1 沙發組</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> <span data-zh="餐廳附 1+4 餐桌椅組" data-en="1+4 dining table set" data-ja="ダイニング 4人用テーブルセット付">餐廳附 1+4 餐桌椅組</span></li>
-            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> <span data-zh="前後雙陽台 (後陽台洗衣曬衣)" data-en="Front + Rear laundry balcony" data-ja="前後2面バルコニー (洗濯機置場あり)">前後雙陽台 (後陽台洗衣曬衣)</span></li>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="五、社區規約與違約退租" data-en="5. Community & Eviction" data-ja="5. マンション規約・違約退去">五、社區規約與違約退租</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i> <span data-zh="社區規約及本說明書列為租約不可分割附約" data-en="Community bylaws integrated as lease addendum" data-ja="マンション管理規約を契約付属書類として明記">社區規約及本說明書列為租約不可分割附約</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i> <span data-zh="管委會舉發罰鍰優先自押金扣除" data-en="HOA fines deducted directly from security deposit" data-ja="管理組合からの過料は敷金から優先相殺">管委會舉發罰鍰優先自押金扣除</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i> <span data-zh="重大違規(罰款逾5000未繳)1個月內無條件遷出" data-en="Major breach (>NT$5,000 fine): 1 mo. notice to leave" data-ja="重大違反（過料5千元超未納）は1ヶ月内退去">重大違規(罰款逾5000未繳)1個月內無條件遷出</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5"></i> <span data-zh="保障社區安寧與全體住戶高品質生活環境" data-en="Preserves peaceful high-quality community living" data-ja="良質で安全なコミュニティ環境を保護">保障社區安寧與全體住戶高品質生活環境</span></li>
+          </ul>
+        </div>
+
+        <!-- SOP 6: Dedicated Parking Bundle -->
+        <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-pink-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-3">
+            <i data-lucide="parking-square" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="六、專屬車位合併承租" data-en="6. Parking Space Policy" data-ja="6. 付属駐車場の一括賃貸">六、專屬車位合併承租</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> <span data-zh="車位為本戶專屬固定配置，與房屋一體出租" data-en="Dedicated space bundled with unit; no split lease" data-ja="住戸専用の固定割当のため、一括賃貸のみ">車位為本戶專屬固定配置，與房屋一體出租</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> <span data-zh="不單獨拆租或因無車扣減租金" data-en="Rent not reduced if tenant does not own a car" data-ja="車未所有による賃料減額・単独解約は不可">不單獨拆租或因無車扣減租金</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> <span data-zh="可供親友訪客臨時停車或依規定停放機車" data-en="Available for guests or scooters per HOA rules" data-ja="来客用駐車やバイク等の駐輪に活用可能">可供親友訪客臨時停車或依規定停放機車</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-pink-400 shrink-0 mt-0.5"></i> <span data-zh="門禁、車位遙控器全套點交交付" data-en="Parking remote and access card fully delivered" data-ja="駐車場リモコン・入館カードを完備引渡">門禁、車位遙控器全套點交交付</span></li>
+          </ul>
+        </div>
+
+        <!-- SOP 7: Foreign Tenants Screening -->
+        <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-indigo-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-3">
+            <i data-lucide="globe-2" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="七、外國人承租審查要點" data-en="7. Foreign Tenants SOP" data-ja="7. 外国人入居審査要件">七、外國人承租審查要點</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400 shrink-0 mt-0.5"></i> <span data-zh="核驗護照、居留證(ARC)及在台工作聘書" data-en="Valid Passport, ARC & employment letter verified" data-ja="パスポート、居留証(ARC)、在籍証明の確認">核驗護照、居留證(ARC)及在台工作聘書</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400 shrink-0 mt-0.5"></i> <span data-zh="租賃期限不得超過居留簽證之有效期限" data-en="Lease term cannot exceed ARC/visa validity" data-ja="賃貸借期間は居留証の有効期限内を上限">租賃期限不得超過居留簽證之有效期限</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400 shrink-0 mt-0.5"></i> <span data-zh="優先外商法人簽約或附台灣本地連帶保證人" data-en="Corporate lease preferred or local Taiwanese guarantor" data-ja="法人契約優先、または台湾現地連帯保証人必須">優先外商法人簽約或附台灣本地連帶保證人</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400 shrink-0 mt-0.5"></i> <span data-zh="提供中英文對照契約，適用中華民國法律" data-en="Bilingual lease contract under ROC laws" data-ja="中英バイリンガル契約書完備・台湾法準拠">提供中英文對照契約，適用中華民國法律</span></li>
+          </ul>
+        </div>
+
+        <!-- SOP 8: Pet Addendum -->
+        <div class="glass-card rounded-2xl p-5 border border-gray-800 hover:border-red-500/40 transition">
+          <div class="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-3">
+            <i data-lucide="paw-print" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white text-base mb-2" data-zh="八、寵物特約與公證條款" data-en="8. Pet Lease Addendum" data-ja="8. ペット飼育特約・公正証書">八、寵物特約與公證條款</h4>
+          <ul class="space-y-2 text-xs text-gray-300">
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5"></i> <span data-zh="原則禁止；特許需備晶片、狂犬病與絕育證明" data-en="Prohibited unless approved w/ chip & rabies proof" data-ja="原則不可。許可時はマイクロチップ・狂犬病接種必須">原則禁止；特許需備晶片、狂犬病與絕育證明</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5"></i> <span data-zh="另收寵物保證金，確保無抓咬吠叫損壞" data-en="Separate pet deposit for damage/cleaning guarantee" data-ja="別途ペット保証金徴収（破損・消臭対策）">另收寵物保證金，確保無抓咬吠叫損壞</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5"></i> <span data-zh="退租時自費由專業團隊除臭除毛除蟲" data-en="Professional cleaning & pest control on move-out" data-ja="退去時は専門業者による消臭・除菌清掃実費">退租時自費由專業團隊除臭除毛除蟲</span></li>
+            <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5"></i> <span data-zh="契約送民間公證處公證，具強制執行力" data-en="Lease notarized for legal execution assurance" data-ja="公正証書作成対応、強制執行認諾約款付">契約送民間公證處公證，具強制執行力</span></li>
           </ul>
         </div>
 
@@ -1086,15 +1137,15 @@
           <ul class="space-y-2.5 text-xs text-gray-300">
             <li class="flex items-start gap-2">
               <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
-              <span data-zh="室內、陽台及公共區域【全面嚴禁吸菸】（含電子煙）。" data-en="Strictly NO SMOKING (including e-cigarettes) indoors, balconies, or hallways." data-ja="室内・バルコニー・共用部【完全禁煙】（電子タバコ含む）。">室內、陽台及公共區域【全面嚴禁吸菸】（含電子煙）。</span>
+              <span data-zh="室內、陽台及公共區域【全面嚴禁吸菸】（含電子煙與檳榔）。" data-en="Strictly NO SMOKING (including e-cigarettes/betel nut) indoors & balconies." data-ja="室内・バルコニー・共用部【完全禁煙】（電子タバコ・ビンロウ禁止）。">室內、陽台及公共區域【全面嚴禁吸菸】（含電子煙與檳榔）。</span>
             </li>
             <li class="flex items-start gap-2">
               <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
-              <span data-zh="【不可養寵物】維持全套原木與OA家具之乾淨清新。" data-en="No pets allowed to preserve solid wood and clean living conditions." data-ja="【ペット飼育不可】高級家具・室内環境の保全のため。">【不可養寵物】維持全套原木與OA家具之乾淨清新。</span>
+              <span data-zh="【寵物特約】原則禁寵；經特許須簽署特約條款並繳納寵物保證金。" data-en="Pets banned unless specifically authorized with pet addendum & deposit." data-ja="【ペット特約】原則不可。特許時は特約締結および保証金預託必須。">【寵物特約】原則禁寵；經特許須簽署特約條款並繳納寵物保證金。</span>
             </li>
             <li class="flex items-start gap-2">
               <i data-lucide="x-circle" class="w-4 h-4 text-red-400 shrink-0 mt-0.5"></i>
-              <span data-zh="嚴禁轉租、分租、日租套房、賭博、吸毒或任何違法用途。" data-en="No subleasing, Airbnb, gambling, drugs, or illegal activities whatsoever." data-ja="転貸・民泊(Airbnb)・賭博・薬物等の違法行為は固く禁止。">嚴禁轉租、分租、日租套房、賭博、吸毒或任何違法用途。</span>
+              <span data-zh="嚴禁轉租、分租、日租套房、賭博、吸毒、神壇或任何違法用途。" data-en="No subleasing, Airbnb, gambling, drugs, altars, or illegal activities." data-ja="転貸・民泊(Airbnb)・賭博・薬物・祭壇等の違法行為は固く禁止。">嚴禁轉租、分租、日租套房、賭博、吸毒、神壇或任何違法用途。</span>
             </li>
           </ul>
         </div>
@@ -1340,20 +1391,15 @@
                 <input type="text" id="inq-name" placeholder="例如：陳先生 / 林小姐" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm">
               </div>
               <div>
-                <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="預計居住人數" data-en="Number of Occupants" data-ja="ご入居予定人数">預計居住人數</label>
-                <select id="inq-occupants" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white focus:outline-none focus:border-emerald-500 text-sm">
-                  <option value="1-2 人 (夫妻/伴侶)">1-2 人 (夫妻/伴侶)</option>
-                  <option value="3-4 人 (家庭居住)" selected>3-4 人 (家庭居住)</option>
-                  <option value="5 人以上">5 人以上</option>
-                  <option value="公司承租/主管宿舍">公司承租/主管宿舍</option>
-                </select>
+                <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="預計居住人數與關係" data-en="Number of Occupants & Relations" data-ja="入居人数と続柄">預計居住人數與關係</label>
+                <input type="text" id="inq-occupants" placeholder="例如：3人 (母女、母子)" value="3人 (家庭居住)" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white focus:outline-none focus:border-emerald-500 text-sm">
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="任職產業 / 職業" data-en="Profession / Industry" data-ja="ご職業・勤務先">任職產業 / 職業</label>
-                <input type="text" id="inq-job" placeholder="例如：中科工程師 / 金融業" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm">
+                <input type="text" id="inq-job" placeholder="例如：中科工程師 / 物業經理" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm">
               </div>
               <div>
                 <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="預計起租日期" data-en="Expected Move-in Date" data-ja="入居希望時期">預計起租日期</label>
@@ -1361,9 +1407,23 @@
               </div>
             </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="抽菸習慣 / 寵物" data-en="Smoking / Pets" data-ja="喫煙・ペットの有無">抽菸習慣 / 寵物</label>
+                <input type="text" id="inq-pets" placeholder="無抽菸 / 無寵物" value="無抽菸 / 無寵物" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white focus:outline-none focus:border-emerald-500 text-sm">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="租金補貼需求" data-en="Rent Subsidy Requirement" data-ja="家賃補助申請の有無">租金補貼需求</label>
+                <select id="inq-subsidy" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                  <option value="需要申請租金補貼" selected>需要申請政府租金補貼</option>
+                  <option value="不需要申請">不需要申請</option>
+                </select>
+              </div>
+            </div>
+
             <div>
-              <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="其他備註 / 期望看屋時間" data-en="Additional Notes / Preferred Viewing Time" data-ja="ご要望・内見希望時間帯">其他備註 / 期望看屋時間</label>
-              <textarea id="inq-note" rows="2" placeholder="例如：平日晚上 7 點後或週末下午方便看屋" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
+              <label class="block text-xs font-semibold text-gray-300 mb-1" data-zh="證明文件與期望看屋時間" data-en="Documents & Preferred Viewing Time" data-ja="提出可能書類・内見希望時間帯">證明文件與期望看屋時間</label>
+              <textarea id="inq-note" rows="2" placeholder="工作證明/良民證已準備好；期望平日晚上7點後或週末看屋" class="w-full px-3.5 py-2.5 rounded-xl bg-gray-900/80 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
             </div>
 
             <div class="pt-2 flex flex-wrap gap-3">
@@ -1496,14 +1556,14 @@
         else if (lang === 'ja') nameInput.placeholder = "例：陳様 / 山田様";
       }
       if (jobInput) {
-        if (lang === 'zh') jobInput.placeholder = "例如：中科工程師 / 金融業";
-        else if (lang === 'en') jobInput.placeholder = "e.g., Tech Engineer / Finance";
-        else if (lang === 'ja') jobInput.placeholder = "例：ITエンジニア / 金融機関勤務";
+        if (lang === 'zh') jobInput.placeholder = "例如：中科工程師 / 物業經理";
+        else if (lang === 'en') jobInput.placeholder = "e.g., Tech Engineer / Property Manager";
+        else if (lang === 'ja') jobInput.placeholder = "例：ITエンジニア / マンション管理士";
       }
       if (noteInput) {
-        if (lang === 'zh') noteInput.placeholder = "例如：平日晚上 7 點後或週末下午方便看屋";
-        else if (lang === 'en') noteInput.placeholder = "e.g., Weekday evenings after 7 PM or weekend afternoons";
-        else if (lang === 'ja') noteInput.placeholder = "例：平日の19時以降または週末の午後に内見希望";
+        if (lang === 'zh') noteInput.placeholder = "工作證明/良民證已準備好；期望平日晚上7點後或週末看屋";
+        else if (lang === 'en') noteInput.placeholder = "Documents ready; Preferred viewing after 7 PM on weekdays or weekends";
+        else if (lang === 'ja') noteInput.placeholder = "証明書類準備済。平日の19時以降または週末の午後に内見希望";
       }
 
       const toastMsgs = {
@@ -1588,11 +1648,11 @@
     function copyLineTemplate() {
       let template = "";
       if (currentLang === 'zh') {
-        template = "您好！我想預約看台中【大成都社區 2F-1】出租物件 (591: 21828684)：\n姓名：\n居住人數：\n職業：\n預計起租日：\n期望看屋時間：";
+        template = "您好！我想預約看台中【大成都社區 2F-1】出租物件 (591: 21828684)：\n姓名：\n居住人數與關係：\n職業：\n抽菸/寵物：無抽菸/無寵物\n租補需求：需要\n預計起租日：\n期望看屋時間：";
       } else if (currentLang === 'en') {
-        template = "Hello! I would like to schedule a viewing for Da Chengdu 2F-1 (591: 21828684):\nName:\nOccupants:\nProfession:\nExpected Move-in Date:\nPreferred Viewing Time:";
+        template = "Hello! I would like to schedule a viewing for Da Chengdu 2F-1 (591: 21828684):\nName:\nOccupants & Relations:\nProfession:\nSmoking/Pets: Non-smoking / No pets\nRent Subsidy: Required\nExpected Move-in Date:\nPreferred Viewing Time:";
       } else if (currentLang === 'ja') {
-        template = "こんにちは！台中【大成都レジデンス 2F-1】(591: 21828684)の内見を希望します：\nお名前：\n入居人数：\nご職業：\n入居希望時期：\n内見希望日時：";
+        template = "こんにちは！台中【大成都レジデンス 2F-1】(591: 21828684)の内見を希望します：\nお名前：\n入居人数・続柄：\nご職業：\n喫煙・ペット：禁煙 / ペット無\n家賃補助申請：希望\n入居希望時期：\n内見希望日時：";
       }
 
       navigator.clipboard.writeText(template).then(() => {
@@ -1605,40 +1665,48 @@
     // Copy Customized Inquiry Message
     function copyCustomInquiry() {
       const name = document.getElementById('inq-name').value.trim() || (currentLang === 'zh' ? '（預約人）' : (currentLang === 'ja' ? '（内見希望者）' : '(Applicant)'));
-      const occupants = document.getElementById('inq-occupants').value;
-      const job = document.getElementById('inq-job').value.trim() || (currentLang === 'zh' ? '上班族' : (currentLang === 'ja' ? '会社員' : 'Professional'));
+      const occupants = document.getElementById('inq-occupants').value.trim() || '3人 (家庭居住)';
+      const job = document.getElementById('inq-job').value.trim() || (currentLang === 'zh' ? '上班族/物業經理' : (currentLang === 'ja' ? '会社員' : 'Professional'));
       const date = document.getElementById('inq-date').value || (currentLang === 'zh' ? '面議' : (currentLang === 'ja' ? '相談' : 'Negotiable'));
+      const pets = document.getElementById('inq-pets').value.trim() || '無抽菸 / 無寵物';
+      const subsidy = document.getElementById('inq-subsidy').value;
       const note = document.getElementById('inq-note').value.trim();
 
       let msg = "";
       if (currentLang === 'zh') {
         msg = `您好！我想預約看台中【大成都社區 2F-1】出租物件 (591: 21828684)：\n`;
         msg += `• 姓名/稱呼：${name}\n`;
-        msg += `• 居住人數：${occupants}\n`;
+        msg += `• 居住人數與關係：${occupants}\n`;
         msg += `• 職業/產業：${job}\n`;
+        msg += `• 抽菸/寵物狀況：${pets}\n`;
+        msg += `• 租金補貼：${subsidy}\n`;
         msg += `• 預計起租日：${date}\n`;
-        if (note) msg += `• 備註/方便看屋時間：${note}\n`;
+        if (note) msg += `• 備註/證明與方便看屋時間：${note}\n`;
         msg += `麻煩屋主廖先生協助安排看屋時間，謝謝！`;
       } else if (currentLang === 'en') {
         msg = `Hello! I would like to schedule a viewing for Da Chengdu 2F-1 (591: 21828684):\n`;
         msg += `• Name: ${name}\n`;
-        msg += `• Occupants: ${occupants}\n`;
+        msg += `• Occupants & Relations: ${occupants}\n`;
         msg += `• Profession: ${job}\n`;
+        msg += `• Smoking & Pets: ${pets}\n`;
+        msg += `• Rent Subsidy: ${subsidy}\n`;
         msg += `• Expected Move-in: ${date}\n`;
-        if (note) msg += `• Preferred Time / Note: ${note}\n`;
+        if (note) msg += `• Notes / Preferred Time: ${note}\n`;
         msg += `Thank you Mr. Liao!`;
       } else if (currentLang === 'ja') {
         msg = `初めまして！台中【大成都レジデンス 2F-1】(591: 21828684)の内見予約をお願いします：\n`;
         msg += `• お名前：${name}\n`;
-        msg += `• 入居人数：${occupants}\n`;
+        msg += `• 入居人数・続柄：${occupants}\n`;
         msg += `• ご職業：${job}\n`;
+        msg += `• 喫煙・ペット：${pets}\n`;
+        msg += `• 家賃補助：${subsidy}\n`;
         msg += `• 入居希望日：${date}\n`;
         if (note) msg += `• ご要望・希望時間：${note}\n`;
         msg += `廖（リャオ）様、ご調整のほどよろしくお願いいたします。`;
       }
 
       navigator.clipboard.writeText(msg).then(() => {
-        showToast(currentLang === 'zh' ? "已成功生成並複製預約訊息！" : (currentLang === 'ja' ? "予約メッセージをコピーしました！" : "Viewing inquiry message copied!"));
+        showToast(currentLang === 'zh' ? "已成功生成並複製完整預約訊息！" : (currentLang === 'ja' ? "予約メッセージをコピーしました！" : "Viewing inquiry message copied!"));
       }).catch(() => {
         showToast("複製失敗，請手動複製");
       });
