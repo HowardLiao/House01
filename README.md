@@ -4,6 +4,7 @@
 > 🏷️ **591 房屋交易網優選好屋**：[https://rent.591.com.tw/21828684](https://rent.591.com.tw/21828684)（物件編號：`21828684`）  
 > 🔗 **專屬短網址**: [https://pse.is/9gpk9w](https://pse.is/9gpk9w)  
 > 🌐 **線上互動式專頁 (繁中 / EN / 日本語 切換)**: [https://howardliao.github.io/House01/](https://howardliao.github.io/House01/)  
+> 🧮 **租金、房貸與建置成本精算 PWA**: [https://howardliao.github.io/House01/TryIT/](https://howardliao.github.io/House01/TryIT/)  
 > 📍 **建物座落地點**：台中市西屯區成都路 218 號 2 樓之 1（大成都華廈社區）  
 > 📱 **屋主直租（免仲介服務費・仲介勿擾）**：廖倫豪 博士 / 廖先生 ｜ 電話/LINE：`0975-323161`  
 > 📑 **官方管理手冊 Google Doc**: [大成都 2F 住家出租與帶看管理說明書](https://docs.google.com/document/d/15kREFzv8Zc0JUJk7CiY6eUQqyV-nLt-R7ZGqV3cDejI/edit)

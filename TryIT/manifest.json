@@ -1,0 +1,46 @@
+{
+  "name": "大成都 2F-1 租金與建置成本精算 PWA",
+  "short_name": "大成都2F-1精算",
+  "description": "大成都 2F-1 專業房地產租金收益、房貸本息支出、裝潢建置成本攤提與最佳出租定價精算系統",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0b0f19",
+  "theme_color": "#10b981",
+  "lang": "zh-TW",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "核心精算",
+      "short_name": "精算",
+      "description": "立即開啟租金、房貸與攤提精算器",
+      "url": "./index.html#calculator",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "適合出租定價",
+      "short_name": "建議定價",
+      "description": "查看大成都 2F-1 五大定價策略方案",
+      "url": "./index.html#pricing-matrix",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
