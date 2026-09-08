@@ -1,4 +1,4 @@
-# 大三房+書房+車位+全套傢俱，近三信公園，漢口路｜大成都 2F-1
+# 可租補｜西屯大成都3房＋書房含車位｜近捷運｜全套家具
 ## 4-Room Luxury Residence with Parking @ Da Chengdu | 大成都レジデンス 2F-1
 
 > 🏷️ **591 房屋交易網優選好屋**：[https://rent.591.com.tw/21828684](https://rent.591.com.tw/21828684)（物件編號：`21828684`）  
@@ -6,7 +6,7 @@
 > 🌐 **線上互動式專頁 (繁中 / EN / 日本語 切換)**: [https://howardliao.github.io/House01/](https://howardliao.github.io/House01/)  
 > 🧮 **租金、房貸與建置成本精算 PWA**: [https://howardliao.github.io/House01/TryIT/](https://howardliao.github.io/House01/TryIT/)  
 > 📍 **建物座落地點**：台中市西屯區成都路 218 號 2 樓之 1（大成都華廈社區）  
-> 📱 **屋主直租（免仲介服務費・仲介勿擾）**：廖倫豪 博士 / 廖先生 ｜ 電話/LINE：`0975-323161`  
+> 📱 **屋主直租（免仲介服務費・仲介勿擾）**：廖倫豪 博士 / 廖先生 ｜ 電話/LINE：`0975-***-161`  
 > 📑 **官方管理手冊 Google Doc**: [大成都 2F 住家出租與帶看管理說明書](https://docs.google.com/document/d/15kREFzv8Zc0JUJk7CiY6eUQqyV-nLt-R7ZGqV3cDejI/edit)
 
 ---
@@ -77,7 +77,7 @@
 
 | 項目 (Item) | 正體中文說明 (Traditional Chinese) | English Description | 日本語仕様 (Japanese) |
 | :--- | :--- | :--- | :--- |
-| **591 刊登案名** | 大三房+書房+車位+全套傢俱，近三信公園，漢口路 | Spacious 3-Bed + Study + Parking + Furnished | 広々3LDK+書斎+駐車場+全家具家電付 |
+| **591 刊登案名** | 可租補｜西屯大成都3房＋書房含車位｜近捷運｜全套家具 | Spacious 3-Bed + Study + Parking + Furnished (Subsidy OK / Near MRT) | 広々3LDK+書斎+駐車場+全家具家電付（家賃補助対応・駅近） |
 | **社區名稱** | 大成都（大成都一期，電梯華廈社區） | Da Chengdu Phase 1 (Elevator Apartment) | 大成都（第一期・エレベーター付マンション） |
 | **建物門牌** | 台中市西屯區成都路 218 號 2 樓之 1 | 2F.-1, No. 218, Chengdu Rd., Xitun, Taichung | 台湾台中市西屯区成都路218号2階-1 |
 | **郵遞區號 / 里別** | 40751 台中市西屯區何源里 | 40751, Heyuan Li, Xitun Dist., Taichung | 40751 台中市西屯区何源里 |
@@ -195,4 +195,4 @@ Thank you Mr. Liao!
 よろしくお願いいたします。
 ```
 
-* **聯絡電話 / LINE ID**：`0975-323161`（屋主 廖先生）
+* **聯絡電話 / LINE ID**：`0975-***-161`（屋主 廖先生）
