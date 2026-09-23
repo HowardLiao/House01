@@ -173,7 +173,7 @@
   <!-- Toast Notification -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-emerald-600 text-white shadow-2xl font-medium text-sm border border-emerald-400/40">
     <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-    <span id="toast-msg">操作成功！</span>
+    <span id="toast-msg" data-zh="操作成功！" data-en="Success!" data-ja="操作が完了しました！">操作成功！</span>
   </div>
 
   <!-- PWA Install Banner -->
@@ -396,11 +396,11 @@
             <input type="range" id="slider-rent" min="10000" max="60000" step="500" value="23000" class="w-full accent-emerald-500 cursor-pointer" oninput="syncFromSlider('rent')">
             
             <div class="flex flex-wrap items-center justify-between text-xs gap-1.5 pt-0.5 text-gray-400 font-mono">
-              <span>快速設定：</span>
+              <span data-zh="快速設定：" data-en="Quick Preset:" data-ja="クイック設定：">快速設定：</span>
               <div class="flex flex-wrap gap-1.5">
                 <button onclick="setInputValue('rent', 20000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$20,000</button>
-                <button onclick="setInputValue('rent', 23000)" class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold">$23,000 (預設)</button>
-                <button onclick="setInputValue('rent', 23999)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$23,999 (591刊登)</button>
+                <button onclick="setInputValue('rent', 23000)" class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold" data-zh="$23,000 (預設)" data-en="$23,000 (Default)" data-ja="$23,000 (デフォルト)">$23,000 (預設)</button>
+                <button onclick="setInputValue('rent', 23999)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="$23,999 (591刊登)" data-en="$23,999 (591 Listed)" data-ja="$23,999 (591掲載)">$23,999 (591刊登)</button>
                 <button onclick="setInputValue('rent', 26000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$26,000</button>
                 <button onclick="setInputValue('rent', 30000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$30,000</button>
               </div>
@@ -426,11 +426,11 @@
             <input type="range" id="slider-mortgage" min="0" max="60000" step="500" value="24000" class="w-full accent-red-500 cursor-pointer" oninput="syncFromSlider('mortgage')">
             
             <div class="flex flex-wrap items-center justify-between text-xs gap-1.5 pt-0.5 text-gray-400 font-mono">
-              <span class="text-red-300 font-semibold">房貸設定：</span>
+              <span class="text-red-300 font-semibold" data-zh="房貸設定：" data-en="Mortgage:" data-ja="ローン設定：">房貸設定：</span>
               <div class="flex flex-wrap gap-1.5">
-                <button onclick="setInputValue('mortgage', 0)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$0 (無房貸)</button>
+                <button onclick="setInputValue('mortgage', 0)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="$0 (無房貸)" data-en="$0 (No Mortgage)" data-ja="$0 (ローンなし)">$0 (無房貸)</button>
                 <button onclick="setInputValue('mortgage', 18000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$18,000</button>
-                <button onclick="setInputValue('mortgage', 24000)" class="px-2 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30 font-bold">$24,000 (預設)</button>
+                <button onclick="setInputValue('mortgage', 24000)" class="px-2 py-0.5 rounded bg-red-500/20 text-red-300 border border-red-500/30 font-bold" data-zh="$24,000 (預設)" data-en="$24,000 (Default)" data-ja="$24,000 (デフォルト)">$24,000 (預設)</button>
                 <button onclick="setInputValue('mortgage', 28000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$28,000</button>
                 <button onclick="setInputValue('mortgage', 32000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$32,000</button>
               </div>
@@ -456,12 +456,12 @@
             <input type="range" id="slider-mgmt" min="0" max="10000" step="100" value="3000" class="w-full accent-teal-500 cursor-pointer" oninput="syncFromSlider('mgmt')">
             
             <div class="flex flex-wrap items-center justify-between text-xs gap-1.5 pt-0.5 text-gray-400 font-mono">
-              <span>快速設定：</span>
+              <span data-zh="快速設定：" data-en="Quick Preset:" data-ja="クイック設定：">快速設定：</span>
               <div class="flex flex-wrap gap-1.5">
-                <button onclick="setInputValue('mgmt', 0)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$0 (免管)</button>
+                <button onclick="setInputValue('mgmt', 0)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="$0 (免管)" data-en="$0 (No Fee)" data-ja="$0 (管理費不要)">$0 (免管)</button>
                 <button onclick="setInputValue('mgmt', 1500)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$1,500</button>
-                <button onclick="setInputValue('mgmt', 3000)" class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-300 border border-teal-500/30 font-bold">$3,000 (預設)</button>
-                <button onclick="setInputValue('mgmt', 3300)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$3,300 (社區收費)</button>
+                <button onclick="setInputValue('mgmt', 3000)" class="px-2 py-0.5 rounded bg-teal-500/20 text-teal-300 border border-teal-500/30 font-bold" data-zh="$3,000 (預設)" data-en="$3,000 (Default)" data-ja="$3,000 (デフォルト)">$3,000 (預設)</button>
+                <button onclick="setInputValue('mgmt', 3300)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="$3,300 (社區收費)" data-en="$3,300 (HOA Rate)" data-ja="$3,300 (管理組合費)">$3,300 (社區收費)</button>
                 <button onclick="setInputValue('mgmt', 5000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">$5,000</button>
               </div>
             </div>
@@ -492,12 +492,12 @@
             <input type="range" id="slider-capex" min="100000" max="2500000" step="50000" value="800000" class="w-full accent-amber-500 cursor-pointer" oninput="syncFromSlider('capex')">
             
             <div class="flex flex-wrap items-center justify-between text-xs gap-1.5 pt-0.5 text-gray-400 font-mono">
-              <span id="capex-wan-display" class="text-amber-400 font-bold">80.0 萬元</span>
+              <span id="capex-wan-display" class="text-amber-400 font-bold" data-zh="80.0 萬元" data-en="NT$ 800k" data-ja="80万元">80.0 萬元</span>
               <div class="flex flex-wrap gap-1.5">
-                <button onclick="setInputValue('capex', 500000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">50萬</button>
-                <button onclick="setInputValue('capex', 800000)" class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold">80萬 (預設)</button>
-                <button onclick="setInputValue('capex', 1000000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">100萬</button>
-                <button onclick="setInputValue('capex', 1500000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">150萬</button>
+                <button onclick="setInputValue('capex', 500000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="50萬" data-en="500k" data-ja="50万">50萬</button>
+                <button onclick="setInputValue('capex', 800000)" class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 font-bold" data-zh="80萬 (預設)" data-en="800k (Default)" data-ja="80万 (デフォルト)">80萬 (預設)</button>
+                <button onclick="setInputValue('capex', 1000000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="100萬" data-en="1M" data-ja="100万">100萬</button>
+                <button onclick="setInputValue('capex', 1500000)" class="px-2 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="150萬" data-en="1.5M" data-ja="150万">150萬</button>
               </div>
             </div>
           </div>
@@ -521,12 +521,12 @@
             <input type="range" id="slider-years" min="1" max="12" step="1" value="5" class="w-full accent-blue-500 cursor-pointer" oninput="syncFromSlider('years')">
             
             <div class="flex flex-wrap items-center justify-between text-xs gap-1.5 pt-0.5 text-gray-400 font-mono">
-              <span>週期選擇：</span>
+              <span data-zh="週期選擇：" data-en="Period Select:" data-ja="期間選択：">週期選擇：</span>
               <div class="flex flex-wrap gap-1.5">
-                <button onclick="setInputValue('years', 3)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">3 年</button>
-                <button onclick="setInputValue('years', 5)" class="px-2.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-bold">5 年 (標竿推薦)</button>
-                <button onclick="setInputValue('years', 7)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">7 年</button>
-                <button onclick="setInputValue('years', 10)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300">10 年</button>
+                <button onclick="setInputValue('years', 3)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="3 年" data-en="3 Years" data-ja="3年">3 年</button>
+                <button onclick="setInputValue('years', 5)" class="px-2.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-bold" data-zh="5 年 (標竿推薦)" data-en="5 Years (Benchmark)" data-ja="5年 (推奨)">5 年 (標竿推薦)</button>
+                <button onclick="setInputValue('years', 7)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="7 年" data-en="7 Years" data-ja="7年">7 年</button>
+                <button onclick="setInputValue('years', 10)" class="px-2.5 py-0.5 rounded bg-gray-800 hover:bg-gray-700 text-gray-300" data-zh="10 年" data-en="10 Years" data-ja="10年">10 年</button>
               </div>
             </div>
           </div>
@@ -554,7 +554,7 @@
                 <label class="font-semibold text-gray-300 block mb-1" data-zh="每月維修備用金 (提撥)" data-en="Monthly Maintenance Reserve" data-ja="月額修繕積立引当金">每月維修備用金 (提撥)</label>
                 <div class="flex items-center gap-2">
                   <input type="number" id="input-maintenance" value="1000" min="0" max="10000" step="100" class="w-24 bg-gray-950 px-2.5 py-1.5 rounded-lg border border-gray-700 font-mono text-white text-right" oninput="calculateAll()">
-                  <span class="text-gray-400">NT$ / 月</span>
+                  <span class="text-gray-400" data-zh="NT$ / 月" data-en="NT$ / Mo." data-ja="NT$ / 月">NT$ / 月</span>
                 </div>
               </div>
             </div>
@@ -631,14 +631,14 @@
                   </div>
                   <div class="text-right">
                     <span class="text-2xl sm:text-3xl font-black font-mono" id="sum-cashflow-monthly">- NT$ 4,000</span>
-                    <span class="text-xs text-gray-400 block font-normal">/ 月</span>
+                    <span class="text-xs text-gray-400 block font-normal" data-zh="/ 月" data-en="/ Mo." data-ja="/ 月">/ 月</span>
                   </div>
                 </div>
               </div>
 
               <!-- Asset Net Capital Accumulation Note -->
               <div class="pt-3 border-t border-gray-800 text-[11px] text-gray-400 bg-gray-950/70 p-3 rounded-xl border border-gray-800 leading-relaxed">
-                💡 <strong class="text-emerald-300">資產累積效應：</strong>房貸本息中大部分為「本金累積資產」，相當於租客每月實質為您儲蓄房屋淨值！
+                💡 <strong class="text-emerald-300" data-zh="資產累積效應：" data-en="Equity Build-up:" data-ja="資産蓄積効果：">資產累積效應：</strong><span data-zh="房貸本息中大部分為「本金累積資產」，相當於租客每月實質為您儲蓄房屋淨值！" data-en="The principal portion of your mortgage builds real equity—effectively paid by your tenant!" data-ja="毎月の返済元金分は資産価値として蓄積され、実質的に賃借人があなたの不動産純資産を形成します！">房貸本息中大部分為「本金累積資產」，相當於租客每月實質為您儲蓄房屋淨值！</span>
               </div>
 
             </div>
@@ -787,8 +787,8 @@
               <div class="text-3xl font-black text-purple-400 font-mono" id="price-plan-e">NT$ 48,000</div>
             </div>
             <div class="text-xs text-gray-400 space-y-1 font-mono sm:text-right">
-              <div><span class="text-emerald-400">✓</span> 含車位 + 寬頻 $1,000 + 清潔 $2,000 + 水電 $4,667</div>
-              <div><span class="text-purple-300 font-semibold" data-zh="扣除房貸後年淨現金流達 25 萬+" data-en="Annual Net > NT$250k after Mortgage" data-ja="ローン控除後年間純利益 25万円以上">扣除房貸後年淨現金流達 25 萬+</span></div>
+              <div><span class="text-emerald-400">✓</span> <span data-zh="含車位 + 寬頻 $1,000 + 清潔 $2,000 + 水電 $4,667" data-en="Incl. Parking + Wifi $1k + Cleaning $2k + Utilities $4,667" data-ja="駐車場+Wi-Fi 1,000元+清掃 2,000元+光熱 4,667元込">含車位 + 寬頻 $1,000 + 清潔 $2,000 + 水電 $4,667</span></div>
+              <div><span class="text-purple-300 font-semibold" data-zh="扣除房貸後年淨現金流達 25 萬+" data-en="Annual Net over NT$250k after Mortgage" data-ja="ローン控除後年間純利益 25万円以上">扣除房貸後年淨現金流達 25 萬+</span></div>
             </div>
           </div>
         </div>
@@ -827,7 +827,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-white text-sm" data-zh="基礎水電與拆除泥作" data-en="Plumbing, Electrical & Demo" data-ja="電気・給排水・解体工事">基礎水電與拆除泥作</h4>
-                <span class="text-[11px] text-gray-400">開關配線、衛浴管線更新</span>
+                <span class="text-[11px] text-gray-400" data-zh="開關配線、衛浴管線更新" data-en="Wiring, Switches & Plumbing Overhaul" data-ja="配線・スイッチ・水回り配管更新">開關配線、衛浴管線更新</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-blue-400" id="item-pct-1">31.25%</span>
@@ -847,7 +847,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-white text-sm" data-zh="冷氣空調與廚衛家電" data-en="HVAC & Home Appliances" data-ja="エアコン＆キッチン家電">冷氣空調與廚衛家電</h4>
-                <span class="text-[11px] text-gray-400">一級能效變頻冷氣、冰箱洗衣機</span>
+                <span class="text-[11px] text-gray-400" data-zh="一級能效變頻冷氣、冰箱洗衣機" data-en="Tier-1 Inverter AC, Fridge & Washer" data-ja="省エネインバーターエアコン・冷蔵庫・洗濯機">一級能效變頻冷氣、冰箱洗衣機</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-teal-400" id="item-pct-2">25.00%</span>
@@ -867,7 +867,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-white text-sm" data-zh="全套傢俱與系統收納" data-en="Furniture & Built-in Storage" data-ja="全家具・システム収納">全套傢俱與系統收納</h4>
-                <span class="text-[11px] text-gray-400">沙發餐桌、雙人床組、8尺衣櫃</span>
+                <span class="text-[11px] text-gray-400" data-zh="沙發餐桌、雙人床組、8尺衣櫃" data-en="Sofa, Dining Table, Bed Set & 8ft Wardrobe" data-ja="ソファ・ダイニングテーブル・ベッド・8尺クローゼット">沙發餐桌、雙人床組、8尺衣櫃</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-amber-400" id="item-pct-3">22.50%</span>
@@ -887,7 +887,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-white text-sm" data-zh="全室油漆、燈飾與窗簾軟裝" data-en="Paint, Lighting & Curtains" data-ja="塗装・照明・カーテン">全室油漆、燈飾與窗簾軟裝</h4>
-                <span class="text-[11px] text-gray-400">得利乳膠漆、軌道燈、遮光窗簾</span>
+                <span class="text-[11px] text-gray-400" data-zh="得利乳膠漆、軌道燈、遮光窗簾" data-en="Dulux Latex Paint, Track Lights & Blackout Curtains" data-ja="高級ラテックス塗料・ダクトレール照明・遮光カーテン">得利乳膠漆、軌道燈、遮光窗簾</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-purple-400" id="item-pct-4">13.75%</span>
@@ -907,7 +907,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-white text-sm" data-zh="設計監工、細清與驗收" data-en="Design, Supervision & Cleaning" data-ja="設計管理・美装・引渡検査">設計監工、細清與驗收</h4>
-                <span class="text-[11px] text-gray-400">工程監造、專業退租全室細清</span>
+                <span class="text-[11px] text-gray-400" data-zh="工程監造、專業退租全室細清" data-en="Supervision, Sign-off & Deep Cleaning" data-ja="施工管理・引渡検査・プロ仕様全体清掃">工程監造、專業退租全室細清</span>
               </div>
             </div>
             <span class="text-xs font-mono font-bold text-emerald-400" id="item-pct-5">7.50%</span>
@@ -954,9 +954,9 @@
           <div class="flex items-center gap-2">
             <span class="text-xs font-bold text-gray-300" data-zh="方案切換模擬：" data-en="Compare Scenario:" data-ja="プラン比較切替：">方案切換模擬：</span>
             <div class="inline-flex rounded-lg bg-gray-950 p-1 border border-gray-800 text-xs font-semibold">
-              <button onclick="setChartScenario('c')" id="btn-chart-c" class="px-3 py-1 rounded-md transition bg-amber-500 text-gray-950 font-bold">黃金定價 ($3.93萬)</button>
-              <button onclick="setChartScenario('d')" id="btn-chart-d" class="px-3 py-1 rounded-md transition text-gray-300 hover:text-white">市場甜區 ($3.37萬)</button>
-              <button onclick="setChartScenario('a')" id="btn-chart-a" class="px-3 py-1 rounded-md transition text-gray-300 hover:text-white">房貸平盤 ($2.7萬)</button>
+              <button onclick="setChartScenario('c')" id="btn-chart-c" class="px-3 py-1 rounded-md transition bg-amber-500 text-gray-950 font-bold" data-zh="黃金定價 ($3.93萬)" data-en="Optimal ($39.3k)" data-ja="最適価格 (3.93万)">黃金定價 ($3.93萬)</button>
+              <button onclick="setChartScenario('d')" id="btn-chart-d" class="px-3 py-1 rounded-md transition text-gray-300 hover:text-white" data-zh="市場甜區 ($3.37萬)" data-en="Sweet Spot ($33.7k)" data-ja="スイートスポット (3.37万)">市場甜區 ($3.37萬)</button>
+              <button onclick="setChartScenario('a')" id="btn-chart-a" class="px-3 py-1 rounded-md transition text-gray-300 hover:text-white" data-zh="房貸平盤 ($2.7萬)" data-en="Break-even ($27k)" data-ja="トントン (2.7万)">房貸平盤 ($2.7萬)</button>
             </div>
           </div>
 
@@ -982,12 +982,12 @@
           <table class="w-full text-left text-xs sm:text-sm font-mono">
             <thead>
               <tr class="border-b border-gray-800 text-gray-400 uppercase">
-                <th class="py-2.5 px-3">時間節點</th>
-                <th class="py-2.5 px-3 text-right">當期租金總收入</th>
-                <th class="py-2.5 px-3 text-right text-red-400">房貸本息支出</th>
-                <th class="py-2.5 px-3 text-right">管理費累計支出</th>
-                <th class="py-2.5 px-3 text-right text-emerald-400 font-bold">累計手頭現金淨額</th>
-                <th class="py-2.5 px-3 text-center">狀態</th>
+                <th class="py-2.5 px-3" data-zh="時間節點" data-en="Timeline" data-ja="タイムライン">時間節點</th>
+                <th class="py-2.5 px-3 text-right" data-zh="當期租金總收入" data-en="Gross Rental Income" data-ja="累計総賃料収入">當期租金總收入</th>
+                <th class="py-2.5 px-3 text-right text-red-400" data-zh="房貸本息支出" data-en="Mortgage Outflow" data-ja="住宅ローン返済累計">房貸本息支出</th>
+                <th class="py-2.5 px-3 text-right" data-zh="管理費累計支出" data-en="Cum. Mgmt Fees" data-ja="管理費累計">管理費累計支出</th>
+                <th class="py-2.5 px-3 text-right text-emerald-400 font-bold" data-zh="累計手頭現金淨額" data-en="Net Cash on Hand" data-ja="手元純現金残高">累計手頭現金淨額</th>
+                <th class="py-2.5 px-3 text-center" data-zh="狀態" data-en="Status" data-ja="ステータス">狀態</th>
               </tr>
             </thead>
             <tbody id="table-cashflow-body" class="divide-y divide-gray-800/60 text-gray-300">
@@ -1028,10 +1028,10 @@
                   <input type="radio" name="subsidy-tier" value="5000" checked onchange="calculateSubsidy()" class="accent-emerald-500">
                   <div>
                     <span class="font-bold text-white block" data-zh="第二級：一般家庭 / 新婚家庭" data-en="Tier 2: General / Newlywed" data-ja="第2級：一般家庭・新婚世帯">第二級：一般家庭 / 新婚家庭</span>
-                    <span class="text-[11px] text-gray-400">台中西屯/四期標準補貼 (約 $4,000 ~ $5,000/月)</span>
+                    <span class="text-[11px] text-gray-400" data-zh="台中西屯/四期標準補貼 (約 $4,000 ~ $5,000/月)" data-en="Taichung Xitun Base Subsidy (NT$4k - $5k/mo)" data-ja="台中西屯 基本家賃補助（約4,000〜5,000元/月）">台中西屯/四期標準補貼 (約 $4,000 ~ $5,000/月)</span>
                   </div>
                 </div>
-                <span class="font-mono font-bold text-emerald-400">補助 $5,000</span>
+                <span class="font-mono font-bold text-emerald-400" data-zh="補助 $5,000" data-en="Subsidy $5,000" data-ja="補助 5,000元">補助 $5,000</span>
               </label>
 
               <label class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 flex items-center justify-between cursor-pointer hover:border-emerald-500/50 transition">
@@ -1039,10 +1039,10 @@
                   <input type="radio" name="subsidy-tier" value="8000" onchange="calculateSubsidy()" class="accent-emerald-500">
                   <div>
                     <span class="font-bold text-white block" data-zh="第一級：育有未成年子女 / 低收中低收" data-en="Tier 1: Minor Children / Low Income" data-ja="第1級：未成年子育て世帯・低所得">第一級：育有未成年子女 / 低收中低收</span>
-                    <span class="text-[11px] text-gray-400">育有 2~3 名子女加碼補貼 (最高約 $8,000/月)</span>
+                    <span class="text-[11px] text-gray-400" data-zh="育有 2~3 名子女加碼補貼 (最高約 $8,000/月)" data-en="Family with 2-3 Minor Children (Up to NT$8k/mo)" data-ja="未成年子2〜3人世帯 加算補助（最大約8,000元/月）">育有 2~3 名子女加碼補貼 (最高約 $8,000/月)</span>
                   </div>
                 </div>
-                <span class="font-mono font-bold text-emerald-400">補助 $8,000</span>
+                <span class="font-mono font-bold text-emerald-400" data-zh="補助 $8,000" data-en="Subsidy $8,000" data-ja="補助 8,000元">補助 $8,000</span>
               </label>
 
               <label class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 flex items-center justify-between cursor-pointer hover:border-emerald-500/50 transition">
@@ -1050,10 +1050,10 @@
                   <input type="radio" name="subsidy-tier" value="2880" onchange="calculateSubsidy()" class="accent-emerald-500">
                   <div>
                     <span class="font-bold text-white block" data-zh="第三級：單身青年 (40歲以下)" data-en="Tier 3: Single Youth (<40 Yrs)" data-ja="第3級：単身青年（40歳未満）">第三級：單身青年 (40歲以下)</span>
-                    <span class="text-[11px] text-gray-400">單身青年加碼 1.2 倍 (約 $2,880/月)</span>
+                    <span class="text-[11px] text-gray-400" data-zh="單身青年加碼 1.2 倍 (約 $2,880/月)" data-en="Single Youth x 1.2 Bonus (~NT$2,880/mo)" data-ja="40歳未満単身青年 1.2倍加算（約2,880元/月）">單身青年加碼 1.2 倍 (約 $2,880/月)</span>
                   </div>
                 </div>
-                <span class="font-mono font-bold text-emerald-400">補助 $2,880</span>
+                <span class="font-mono font-bold text-emerald-400" data-zh="補助 $2,880" data-en="Subsidy $2,880" data-ja="補助 2,880元">補助 $2,880</span>
               </label>
 
               <label class="p-3.5 rounded-xl bg-gray-950/80 border border-gray-800 flex items-center justify-between cursor-pointer hover:border-emerald-500/50 transition">
@@ -1061,10 +1061,10 @@
                   <input type="radio" name="subsidy-tier" value="0" onchange="calculateSubsidy()" class="accent-emerald-500">
                   <div>
                     <span class="font-bold text-white block" data-zh="無補助 (外商高階主管 / 公司戶)" data-en="No Subsidy (Corporate / Expat)" data-ja="補助なし (法人・役員契約)">無補助 (外商高階主管 / 公司戶)</span>
-                    <span class="text-[11px] text-gray-400">不符合補貼條件之承租人</span>
+                    <span class="text-[11px] text-gray-400" data-zh="不符合補貼條件之承租人" data-en="Tenants not eligible for subsidies" data-ja="家賃補助金の対象外となる入居者">不符合補貼條件之承租人</span>
                   </div>
                 </div>
-                <span class="font-mono font-bold text-gray-400">補助 $0</span>
+                <span class="font-mono font-bold text-gray-400" data-zh="補助 $0" data-en="Subsidy $0" data-ja="補助 0元">補助 $0</span>
               </label>
             </div>
           </div>
@@ -1085,11 +1085,11 @@
 
             <div class="pt-4 border-t border-gray-800">
               <span class="text-xs text-amber-400 font-bold block" data-zh="房客每月實質自付金額 (超高性價比)" data-en="Tenant Actual Out-of-Pocket" data-ja="入居者毎月実質自己負担額">房客每月實質自付金額 (超高性價比)</span>
-              <div class="text-3xl font-black text-amber-300 font-mono mt-1" id="sub-tenant-actual">NT$ 22,000 <span class="text-xs text-gray-400 font-normal">/ 月</span></div>
+              <div class="text-3xl font-black text-amber-300 font-mono mt-1" id="sub-tenant-actual">NT$ 22,000 <span class="text-xs text-gray-400 font-normal" data-zh="/ 月" data-en="/ Mo." data-ja="/ 月">/ 月</span></div>
             </div>
 
             <div class="text-[11px] text-gray-400 leading-relaxed bg-gray-900/60 p-3 rounded-xl border border-gray-800">
-              💡 <strong class="text-gray-200">大成都 2F-1 直租優勢：</strong>可申請 300 億租金補貼、可設籍報稅。房東享有公益出租人每月最高 15,000 元所得稅免稅額，房屋稅地價稅享自用超優惠稅率！
+              💡 <strong class="text-gray-200" data-zh="大成都 2F-1 直租優勢：" data-en="Direct Owner Lease Advantages:" data-ja="大成都 2F-1 直募オーナーメリット：">大成都 2F-1 直租優勢：</strong><span data-zh="可申請 300 億租金補貼、可設籍報稅。房東享有公益出租人每月最高 15,000 元所得稅免稅額，房屋稅地價稅享自用超優惠稅率！" data-en="Eligible for NT$30B rent subsidy, tax deduction & registration. Landlord enjoys NT$15k/mo income tax deduction plus lowest owner-occupied tax rates!" data-ja="300億元中央家賃補助金申請・住民票登録・税控除対応。オーナーは月額最大1.5万元の所得税免税および自用特別優遇税率を享受！">可申請 300 億租金補貼、可設籍報稅。房東享有公益出租人每月最高 15,000 元所得稅免稅額，房屋稅地價稅享自用超優惠稅率！</span>
             </div>
           </div>
 
@@ -1110,8 +1110,8 @@
             DC
           </div>
           <div>
-            <div class="font-bold text-white text-sm">大成都 2F-1 租金、房貸與建置成本精算 PWA 系統</div>
-            <div class="text-gray-500 text-[11px]">台中市西屯區成都路218號2F-1 • Da Chengdu Residence 2F-1</div>
+            <div class="font-bold text-white text-sm" data-zh="大成都 2F-1 租金、房貸與建置成本精算 PWA 系統" data-en="Da Chengdu 2F-1 Rental, Mortgage & CapEx Amortization PWA" data-ja="大成都 2F-1 賃料・ローン・内装償却精算 PWA システム">大成都 2F-1 租金、房貸與建置成本精算 PWA 系統</div>
+            <div class="text-gray-500 text-[11px]" data-zh="台中市西屯區成都路218號2F-1 • Da Chengdu Residence 2F-1" data-en="2F-1, No. 218 Chengdu Rd, Xitun, Taichung • Da Chengdu Residence 2F-1" data-ja="台湾台中市西屯区成都路218号2F-1 • 大成都レジデンス 2F-1">台中市西屯區成都路218號2F-1 • Da Chengdu Residence 2F-1</div>
           </div>
         </div>
 
@@ -1135,13 +1135,13 @@
       </div>
 
       <div class="pt-6 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-gray-500">
-        <div>© 2026 大成都 2F-1 (House01/TryIT). All rights reserved.</div>
+        <div data-zh="© 2026 大成都 2F-1 (House01/TryIT). 保留所有權利。" data-en="© 2026 Da Chengdu 2F-1 (House01/TryIT). All rights reserved." data-ja="© 2026 大成都 2F-1 (House01/TryIT). All rights reserved.">© 2026 大成都 2F-1 (House01/TryIT). All rights reserved.</div>
         <div class="flex flex-wrap gap-4 font-mono">
-          <span>租金 NT$ 23,000</span>
-          <span>房貸 NT$ 24,000</span>
-          <span>管理費 $3,000</span>
-          <span>建置 80 萬</span>
-          <span>攤提 5 年</span>
+          <span data-zh="租金 NT$ 23,000" data-en="Rent NT$ 23k" data-ja="賃料 2.3万元">租金 NT$ 23,000</span>
+          <span data-zh="房貸 NT$ 24,000" data-en="Mortgage NT$ 24k" data-ja="ローン 2.4万元">房貸 NT$ 24,000</span>
+          <span data-zh="管理費 $3,000" data-en="Mgmt $3k" data-ja="管理費 3千元">管理費 $3,000</span>
+          <span data-zh="建置 80 萬" data-en="CapEx 800k" data-ja="工事費 80万元">建置 80 萬</span>
+          <span data-zh="攤提 5 年" data-en="Amort. 5 Yrs" data-ja="償却 5年">攤提 5 年</span>
         </div>
       </div>
 
@@ -1167,33 +1167,33 @@
 
       <div class="space-y-3 max-h-72 overflow-y-auto pr-1 text-xs">
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-gray-950 border border-gray-800">
-          <span class="text-gray-300">1. 基礎水電泥作工程</span>
+          <span class="text-gray-300" data-zh="1. 基礎水電泥作工程" data-en="1. Basic Plumbing & Electrical" data-ja="1. 給排水・電気・左官工事">1. 基礎水電泥作工程</span>
           <input type="number" id="modal-item-1" value="250000" step="5000" class="w-28 bg-gray-900 px-2 py-1 rounded text-right font-mono font-bold text-white border border-gray-700" oninput="syncModalItemToMain(1)">
         </div>
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-gray-950 border border-gray-800">
-          <span class="text-gray-300">2. 冷氣空調家電廚衛</span>
+          <span class="text-gray-300" data-zh="2. 冷氣空調家電廚衛" data-en="2. Inverter AC & Kitchen/Bath" data-ja="2. エアコン・家電・水回り機器">2. 冷氣空調家電廚衛</span>
           <input type="number" id="modal-item-2" value="200000" step="5000" class="w-28 bg-gray-900 px-2 py-1 rounded text-right font-mono font-bold text-white border border-gray-700" oninput="syncModalItemToMain(2)">
         </div>
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-gray-950 border border-gray-800">
-          <span class="text-gray-300">3. 全套傢俱系統收納</span>
+          <span class="text-gray-300" data-zh="3. 全套傢俱系統收納" data-en="3. Furniture & Storage Systems" data-ja="3. 全家具・システム収納">3. 全套傢俱系統收納</span>
           <input type="number" id="modal-item-3" value="180000" step="5000" class="w-28 bg-gray-900 px-2 py-1 rounded text-right font-mono font-bold text-white border border-gray-700" oninput="syncModalItemToMain(3)">
         </div>
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-gray-950 border border-gray-800">
-          <span class="text-gray-300">4. 油漆燈飾窗簾軟裝</span>
+          <span class="text-gray-300" data-zh="4. 油漆燈飾窗簾軟裝" data-en="4. Paint, Lighting & Curtains" data-ja="4. 塗装・照明・カーテン・インテリア">4. 油漆燈飾窗簾軟裝</span>
           <input type="number" id="modal-item-4" value="110000" step="5000" class="w-28 bg-gray-900 px-2 py-1 rounded text-right font-mono font-bold text-white border border-gray-700" oninput="syncModalItemToMain(4)">
         </div>
         <div class="flex items-center justify-between p-2.5 rounded-xl bg-gray-950 border border-gray-800">
-          <span class="text-gray-300">5. 設計監工驗收細清</span>
+          <span class="text-gray-300" data-zh="5. 設計監工驗收細清" data-en="5. Design, Inspection & Cleaning" data-ja="5. 設計・施工管理・最終美装">5. 設計監工驗收細清</span>
           <input type="number" id="modal-item-5" value="60000" step="5000" class="w-28 bg-gray-900 px-2 py-1 rounded text-right font-mono font-bold text-white border border-gray-700" oninput="syncModalItemToMain(5)">
         </div>
       </div>
 
       <div class="pt-3 border-t border-gray-800 flex items-center justify-between">
-        <span class="text-xs font-bold text-amber-400">總計金額：</span>
+        <span class="text-xs font-bold text-amber-400" data-zh="總計金額：" data-en="Total Budget:" data-ja="内訳合計金額：">總計金額：</span>
         <span id="modal-total-display" class="font-mono text-xl font-black text-amber-300">NT$ 800,000</span>
       </div>
 
-      <button onclick="closeBreakdownModal()" class="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold text-sm transition">
+      <button onclick="closeBreakdownModal()" class="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold text-sm transition" data-zh="確定並關閉" data-en="Confirm & Close" data-ja="確定して閉じる">
         確定並關閉
       </button>
     </div>
@@ -1223,12 +1223,96 @@
     const i18n = {
       zh: {
         toastCopied: '大成都 2F-1 精算分析摘要已複製至剪貼簿！可直接貼至 LINE。',
+        jsonExported: 'JSON 數據已成功匯出！',
+        toastReset: '已重設為大成都 2F-1 預設條件 ($23,000 / 房貸 $24,000 / $3,000 / 80萬 / 5年)',
+        chartDoughnutLabels: ['房貸本息', '裝潢月攤提', '社區管理費', '維護備用金'],
+        chartCashflowDataset0: '累計淨現金流 (含收回80萬)',
+        chartCashflowDataset1: '當期年租金收入',
+        chartYear0: '第0年 (裝潢投入)',
+        chartYearN: y => `第${y}年`,
+        tableYear0: '第 0 年 (裝潢建置)',
+        tableYear0Badge: '裝潢投入',
+        tableYearN: y => `第 ${y} 年營運`,
+        badgeProfit: '✓ 淨賺現金',
+        badgeEquity: '累積淨值中',
+        docTitle: '大成都 2F-1 租金、房貸與建置成本精算 PWA 系統 | 房產租賃投報與攤提定價',
+        summaryHeader: '🏠【大成都 2F-1 租金、房貸與裝潢建置成本精算分析報告】',
+        summaryParams: '📊 基礎財務參數：',
+        summaryRent: r => `• 每月目標租金：NT$ ${r} 元/月`,
+        summaryMortgage: m => `• 每月房貸本息：NT$ ${m} 元/月 (本金+利息)`,
+        summaryMgmt: mg => `• 每月社區管理費：NT$ ${mg} 元/月`,
+        summaryCapex: (w, c) => `• 裝潢建置成本：NT$ ${w} 萬元 (${c} 元)`,
+        summaryYears: (y, m) => `• 攤提折舊年限：${y} 年 (${m} 個月)`,
+        summaryAmort: a => `• 每月折舊攤提：NT$ ${a} 元/月`,
+        summaryMatrix: '🎯 五大適合出租定價矩陣：',
+        summaryPlanC: p => `👑【推薦首選・黃金全速回本價】：NT$ ${p} 元/月\n   (確保 5 年全額收回 80 萬裝潢款，扣除房貸後每月仍保有 NT$ 12,333 正現金流)`,
+        summaryPlanD: p => `⚡【市場甜蜜點・50%溢價快租價】：NT$ ${p} 元/月\n   (租金全額抵銷房貸與管理費，每月多收 NT$ 6,667 現金流回收裝潢)`,
+        summaryPlanA: p => `🛡️【房貸+管費現金流打平價】：NT$ ${p} 元/月\n   (零自掏腰包！租金完全吸收房貸與管理費，由租客供養整筆房貸積累房產淨值)`,
+        summaryPlanB: p => `💎【全成本保本底線價】：NT$ ${p} 元/月\n   (房貸 $24k + 管費 $3k + 裝潢攤提 $13.3k 全部由租金回收)`,
+        summarySubsidy: s => `🎁 租客 300 億補貼後實質負擔：\n• 租客申請第二級補助 $5,000 後，以方案 A 試算實際每月僅付：NT$ ${s} 元/月！`,
+        summaryFooter: '💡 試算系統：大成都 2F-1 PWA 精算系統 (House01/TryIT)'
       },
       en: {
         toastCopied: 'Da Chengdu 2F-1 Executive Summary copied to clipboard!',
+        jsonExported: 'JSON configuration exported successfully!',
+        toastReset: 'Reset to Da Chengdu 2F-1 defaults ($23,000 / $24,000 / $3,000 / $800k / 5 Yrs)',
+        chartDoughnutLabels: ['Mortgage P&I', 'Monthly Amort.', 'HOA Mgmt Fee', 'Maintenance Reserve'],
+        chartCashflowDataset0: 'Cumulative Net Cash Flow (CapEx Recovery)',
+        chartCashflowDataset1: 'Annual Gross Rental Income',
+        chartYear0: 'Year 0 (CapEx Outlay)',
+        chartYearN: y => `Year ${y}`,
+        tableYear0: 'Year 0 (CapEx Renovation)',
+        tableYear0Badge: 'CapEx Outlay',
+        tableYearN: y => `Year ${y} Operation`,
+        badgeProfit: '✓ Net Profit',
+        badgeEquity: 'Building Equity',
+        docTitle: 'Da Chengdu 2F-1 ROI & CapEx Amortization PWA | Rental Analytics',
+        summaryHeader: '🏠【Da Chengdu 2F-1 Rental, Mortgage & CapEx Amortization Report】',
+        summaryParams: '📊 Key Financial Parameters:',
+        summaryRent: r => `• Target Base Rent: NT$ ${r}/mo.`,
+        summaryMortgage: m => `• Monthly Mortgage (P&I): NT$ ${m}/mo.`,
+        summaryMgmt: mg => `• Monthly HOA Fee: NT$ ${mg}/mo.`,
+        summaryCapex: (w, c) => `• Renovation CapEx: NT$ ${c} (${w}0k)`,
+        summaryYears: (y, m) => `• Amortization Period: ${y} Years (${m} Months)`,
+        summaryAmort: a => `• Monthly Amortization: NT$ ${a}/mo.`,
+        summaryMatrix: '🎯 Recommended Pricing Matrix:',
+        summaryPlanC: p => `👑 [Top Recommended / Golden ROI]: NT$ ${p}/mo.\n   (Full recovery of NT$800k within 5 years + NT$12,333/mo. positive cash flow)`,
+        summaryPlanD: p => `⚡ [Sweet Spot / Fast Lease]: NT$ ${p}/mo.\n   (Offsets mortgage & HOA + NT$6,667/mo. cash buffer to recoup renovation)`,
+        summaryPlanA: p => `🛡️ [Cash Flow Break-Even]: NT$ ${p}/mo.\n   (Zero out-of-pocket: Tenant pays off mortgage while building equity)`,
+        summaryPlanB: p => `💎 [Full-Cost Baseline]: NT$ ${p}/mo.\n   (Mortgage $24k + HOA $3k + full CapEx amortization $13.3k)`,
+        summarySubsidy: s => `🎁 Tenant Out-of-Pocket After NT$30B Subsidy:\n• Under Plan A with Tier-2 ($5,000) subsidy, tenant effectively pays: NT$ ${s}/mo.!`,
+        summaryFooter: '💡 Calculator: Da Chengdu 2F-1 PWA System (House01/TryIT)'
       },
       ja: {
-        toastCopied: '大成都 2F-1 精算サマリーをコピーしました！',
+        toastCopied: '大成都 2F-1 精算サマリーをクリップボードにコピーしました！',
+        jsonExported: 'JSON設定データを正常にエクスポートしました！',
+        toastReset: '大成都 2F-1 デフォルト条件にリセットしました (賃料2.3万/ローン2.4万/管理費3千/工事費80万/5年)',
+        chartDoughnutLabels: ['住宅ローン元利', '内装月割償却', '管理費・共益費', '修繕積立金'],
+        chartCashflowDataset0: '累計純現金フロー (工事費回収含む)',
+        chartCashflowDataset1: '当期年間総賃料収入',
+        chartYear0: '0年目 (初期内装投資)',
+        chartYearN: y => `${y}年目`,
+        tableYear0: '0年目 (内装工事・初期投資)',
+        tableYear0Badge: '初期投資',
+        tableYearN: y => `${y}年目 運用`,
+        badgeProfit: '✓ 純現金黒字',
+        badgeEquity: '資産価値蓄積中',
+        docTitle: '大成都 2F-1 賃料・ローン・内装償却精算 PWA システム | 投資分析',
+        summaryHeader: '🏠【大成都 2F-1 賃料・住宅ローン・内装工事費償却 精算分析レポート】',
+        summaryParams: '📊 基礎財務パラメータ：',
+        summaryRent: r => `• 目標基準賃料：NT$ ${r} 元/月`,
+        summaryMortgage: m => `• 住宅ローン元利返済：NT$ ${m} 元/月 (元金+利息)`,
+        summaryMgmt: mg => `• 管理費・共益費：NT$ ${mg} 元/月`,
+        summaryCapex: (w, c) => `• 内装工事・家具家電総費用：NT$ ${c} 元 (${w}万元)`,
+        summaryYears: (y, m) => `• 減価償却期間：${y} 年 (${m} ヶ月)`,
+        summaryAmort: a => `• 内装月割償却額：NT$ ${a} 元/月`,
+        summaryMatrix: '🎯 推奨賃料設定マトリクス：',
+        summaryPlanC: p => `👑【一番推奨・黄金スピード回収型】：NT$ ${p} 元/月\n   (5年間で80万元の内装費を全額回収し、ローン控除後も月額12,333元の黒字現金を確保)`,
+        summaryPlanD: p => `⚡【市場スイートスポット・早期満室型】：NT$ ${p} 元/月\n   (ローンと管理費を全額相殺＋毎月6,667元の追加キャッシュフロー)`,
+        summaryPlanA: p => `🛡️【ローン・共益費トントン型】：NT$ ${p} 元/月\n   (自己負担ゼロ！賃借人がローン全額を返済し、オーナーの不動産純資産を蓄積)`,
+        summaryPlanB: p => `💎【全コスト元本保証下限型】：NT$ ${p} 元/月\n   (ローン24k + 管理費3k + 償却13.3kを全額賃料で回収)`,
+        summarySubsidy: s => `🎁 300億元中央家賃補助適用後の入居者実質負担：\n• プランAに第2級補助（5,000元）適用時、入居者の実質月額負担はわずか NT$ ${s} 元/月！`,
+        summaryFooter: '💡 精算システム：大成都 2F-1 PWA システム (House01/TryIT)'
       }
     };
 
@@ -1247,9 +1331,11 @@
 
     function registerServiceWorker() {
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js')
-          .then((reg) => console.log('[PWA] Service Worker registered:', reg.scope))
-          .catch((err) => console.warn('[PWA] Service Worker registration failed:', err));
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('[PWA] ServiceWorker registered:', reg.scope))
+            .catch(err => console.warn('[PWA] ServiceWorker registration failed:', err));
+        });
       }
     }
 
@@ -1261,17 +1347,24 @@
         if (banner) banner.classList.remove('hidden');
       });
 
-      const btnInstall = document.getElementById('btn-install-pwa');
-      if (btnInstall) {
-        btnInstall.addEventListener('click', async () => {
-          if (deferredPrompt) {
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            console.log('[PWA] User response:', outcome);
-            deferredPrompt = null;
-            dismissPwaBanner();
+      window.addEventListener('appinstalled', () => {
+        console.log('[PWA] Installed successfully!');
+        const banner = document.getElementById('pwa-install-banner');
+        if (banner) banner.classList.add('hidden');
+      });
+    }
+
+    function triggerPwaInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('[PWA] User accepted install');
           }
+          deferredPrompt = null;
         });
+      } else {
+        showToast(currentLang === 'zh' ? '請透過瀏覽器選單點擊「加到主畫面」進行安裝' : (currentLang === 'ja' ? 'ブラウザメニューから「ホーム画面に追加」を選択してください' : 'Use browser menu -> "Add to Home Screen" to install'));
       }
     }
 
@@ -1280,230 +1373,56 @@
       if (banner) banner.classList.add('hidden');
     }
 
-    function syncFromSlider(field) {
-      const slider = document.getElementById(`slider-${field}`);
-      const input = document.getElementById(`input-${field}`);
-      if (slider && input) {
-        input.value = slider.value;
-        state[field] = parseFloat(slider.value) || 0;
-        calculateAll();
+    function toggleAdvancedSettings() {
+      const panel = document.getElementById('advanced-settings-panel');
+      const arrow = document.getElementById('adv-arrow');
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+      } else {
+        panel.classList.add('hidden');
+        if (arrow) arrow.style.transform = 'rotate(0deg)';
       }
     }
 
     function syncFromNumber(field) {
+      const numInput = document.getElementById(`input-${field}`);
       const slider = document.getElementById(`slider-${field}`);
-      const input = document.getElementById(`input-${field}`);
-      if (slider && input) {
-        slider.value = input.value;
-        state[field] = parseFloat(input.value) || 0;
-        calculateAll();
-      }
+      let val = parseFloat(numInput.value) || 0;
+      if (slider) slider.value = val;
+      state[field] = val;
+      calculateAll();
+    }
+
+    function syncFromSlider(field) {
+      const numInput = document.getElementById(`input-${field}`);
+      const slider = document.getElementById(`slider-${field}`);
+      let val = parseFloat(slider.value) || 0;
+      if (numInput) numInput.value = val;
+      state[field] = val;
+      calculateAll();
     }
 
     function setInputValue(field, val) {
-      state[field] = val;
+      const numInput = document.getElementById(`input-${field}`);
       const slider = document.getElementById(`slider-${field}`);
-      const input = document.getElementById(`input-${field}`);
+      if (numInput) numInput.value = val;
       if (slider) slider.value = val;
-      if (input) input.value = val;
-      
-      if (field === 'capex') {
-        rescaleItemsToTotal(val);
-      }
-      
+      state[field] = val;
       calculateAll();
     }
 
-    function rescaleItemsToTotal(total) {
-      const standardRatios = [0.3125, 0.25, 0.225, 0.1375, 0.075];
-      state.items = standardRatios.map(r => Math.round(total * r));
-      syncItemInputs();
-    }
-
-    function syncItemInputs() {
-      state.items.forEach((val, idx) => {
-        const itemInput = document.getElementById(`item-val-${idx + 1}`);
-        const modalInput = document.getElementById(`modal-item-${idx + 1}`);
-        if (itemInput) itemInput.value = val;
-        if (modalInput) modalInput.value = val;
-        
-        const pctEl = document.getElementById(`item-pct-${idx + 1}`);
-        if (pctEl && state.capex > 0) {
-          pctEl.textContent = ((val / state.capex) * 100).toFixed(2) + '%';
-        }
-      });
-      const totalDisp = document.getElementById('item-total-display');
-      const modalDisp = document.getElementById('modal-total-display');
-      if (totalDisp) totalDisp.textContent = fmt(state.capex);
-      if (modalDisp) modalDisp.textContent = fmt(state.capex);
-    }
-
-    function updateCapExFromItems() {
-      let sum = 0;
-      for (let i = 1; i <= 5; i++) {
-        const val = parseFloat(document.getElementById(`item-val-${i}`).value) || 0;
-        state.items[i - 1] = val;
-        sum += val;
-      }
-      state.capex = sum;
-      const sliderCapex = document.getElementById('slider-capex');
-      const inputCapex = document.getElementById('input-capex');
-      if (sliderCapex) sliderCapex.value = sum;
-      if (inputCapex) inputCapex.value = sum;
-      
-      syncItemInputs();
+    function setSubsidy(amount) {
+      state.subsidy = amount;
       calculateAll();
     }
 
-    function resetBreakdownToDefault() {
-      rescaleItemsToTotal(state.capex || 800000);
-      calculateAll();
-      showToast('裝潢細項已依標準比例重設！');
-    }
-
-    function syncModalItemToMain(idx) {
-      const modalVal = parseFloat(document.getElementById(`modal-item-${idx}`).value) || 0;
-      state.items[idx - 1] = modalVal;
-      const mainInput = document.getElementById(`item-val-${idx}`);
-      if (mainInput) mainInput.value = modalVal;
-      updateCapExFromItems();
-    }
-
-    function openBreakdownModal() {
-      document.getElementById('breakdown-modal').classList.remove('hidden');
-    }
-
-    function closeBreakdownModal() {
-      document.getElementById('breakdown-modal').classList.add('hidden');
-    }
-
-    function toggleAdvancedSettings() {
-      const panel = document.getElementById('advanced-settings-panel');
-      if (panel) {
-        panel.classList.toggle('hidden');
-      }
-    }
-
-    function resetToInitialDefaults() {
-      state.rent = 23000;
-      state.mortgage = 24000;
-      state.mgmt = 3000;
-      state.capex = 800000;
-      state.years = 5;
-      state.vacancyMonths = 0.5;
-      state.maintenanceReserve = 1000;
-      state.subsidy = 5000;
-      state.chartScenario = 'c';
-      rescaleItemsToTotal(800000);
-
-      document.getElementById('slider-rent').value = 23000;
-      document.getElementById('input-rent').value = 23000;
-      document.getElementById('slider-mortgage').value = 24000;
-      document.getElementById('input-mortgage').value = 24000;
-      document.getElementById('slider-mgmt').value = 3000;
-      document.getElementById('input-mgmt').value = 3000;
-      document.getElementById('slider-capex').value = 800000;
-      document.getElementById('input-capex').value = 800000;
-      document.getElementById('slider-years').value = 5;
-      document.getElementById('input-years').value = 5;
-      document.getElementById('input-vacancy').value = 0.5;
-      document.getElementById('input-maintenance').value = 1000;
-
-      calculateAll();
-      showToast('已重設為大成都 2F-1 預設條件 ($23,000 / 房貸 $24,000 / $3,000 / 80萬 / 5年)');
-    }
-
-    // Core Calculation Engine
-    function calculateAll() {
-      state.rent = parseFloat(document.getElementById('input-rent').value) || 0;
-      state.mortgage = parseFloat(document.getElementById('input-mortgage').value) || 0;
-      state.mgmt = parseFloat(document.getElementById('input-mgmt').value) || 0;
-      state.capex = parseFloat(document.getElementById('input-capex').value) || 0;
-      state.years = parseFloat(document.getElementById('input-years').value) || 5;
-      state.vacancyMonths = parseFloat(document.getElementById('input-vacancy').value) || 0;
-      state.maintenanceReserve = parseFloat(document.getElementById('input-maintenance').value) || 0;
-
-      const totalMonths = state.years * 12;
-      const monthlyAmort = totalMonths > 0 ? (state.capex / totalMonths) : 0;
-      const monthlyCashflowNeutral = state.mortgage + state.mgmt;
-      const monthlyFullCost = state.mortgage + state.mgmt + monthlyAmort;
-      
-      // Net monthly operating cashflow = Rent - Mortgage - Mgmt - Maintenance Reserve
-      const monthlyOperatingCashflow = state.rent - state.mortgage - state.mgmt - state.maintenanceReserve;
-
-      // Update KPI Elements
-      document.getElementById('kpi-mortgage').textContent = fmt(state.mortgage);
-      document.getElementById('kpi-monthly-amort').textContent = fmt(monthlyAmort);
-      document.getElementById('kpi-amort-desc').textContent = `80萬 ÷ ${totalMonths}個月`;
-      document.getElementById('kpi-cashflow-neutral').textContent = fmt(monthlyCashflowNeutral);
-      document.getElementById('kpi-full-cost').textContent = fmt(monthlyFullCost);
-      
-      // Update Inputs Display Tags
-      document.getElementById('capex-wan-display').textContent = `${(state.capex / 10000).toFixed(1)} 萬元`;
-      document.getElementById('amort-months-label').textContent = `(共 ${totalMonths} 個月)`;
-
-      // Update Live Summary Panel
-      document.getElementById('sum-rent').textContent = fmt(state.rent);
-      document.getElementById('sum-mortgage').textContent = '- ' + fmt(state.mortgage);
-      document.getElementById('sum-mgmt').textContent = '- ' + fmt(state.mgmt);
-      document.getElementById('sum-amort').textContent = '- ' + fmt(monthlyAmort);
-      document.getElementById('sum-maintenance').textContent = '- ' + fmt(state.maintenanceReserve);
-      
-      const cfEl = document.getElementById('sum-cashflow-monthly');
-      cfEl.textContent = (monthlyOperatingCashflow >= 0 ? '+' : '') + fmt(monthlyOperatingCashflow);
-      cfEl.className = `text-2xl sm:text-3xl font-black font-mono ${monthlyOperatingCashflow >= 0 ? 'text-emerald-400' : 'text-amber-400'}`;
-
-      // ==========================================
-      // PRICING STRATEGY SCENARIOS (適合出租的金額)
-      // ==========================================
-      // Plan A: 房貸+管費平盤打平 (Cashflow Neutral)
-      const planA = state.mortgage + state.mgmt;
-      // Plan B: 全成本保本 (房貸 + 管費 + 裝潢月攤提)
-      const planB = state.mortgage + state.mgmt + monthlyAmort;
-      // Plan C: 黃金全速回本 (目標實拿淨租金 $23,000 + 管理費 $3,000 + 全額月攤提 $13,333)
-      const planC = state.rent + state.mgmt + monthlyAmort;
-      // Plan D: 市場甜蜜點 (房貸 $24,000 + 管理費 $3,000 + 50% 裝潢溢價 $6,667)
-      const planD = state.mortgage + state.mgmt + (monthlyAmort * 0.5);
-      // Plan E: 外商商務尊榮全包 (Plan B + 車位/光纖/清潔/水電補助)
-      const planE = Math.max(48000, planB + 7500);
-
-      document.getElementById('price-plan-a').textContent = fmt(planA);
-      document.getElementById('price-plan-b').textContent = fmt(planB);
-      document.getElementById('price-plan-c').textContent = fmt(planC);
-      document.getElementById('kpi-golden-rent').textContent = fmt(planC);
-      document.getElementById('price-plan-d').textContent = fmt(planD);
-      document.getElementById('price-plan-e').textContent = fmt(planE);
-
-      // Update Subsidy Section
-      calculateSubsidy();
-
-      // Update Charts
-      updateDoughnutChart(state.mortgage, monthlyAmort, state.mgmt, state.maintenanceReserve);
-      updateCashflowChart();
-      updateCashflowTable();
-
-      saveState();
-    }
-
-    function calculateSubsidy() {
-      const selectedRadio = document.querySelector('input[name="subsidy-tier"]:checked');
-      const subsidyAmount = selectedRadio ? parseFloat(selectedRadio.value) : 5000;
-      state.subsidy = subsidyAmount;
-
-      const askingTotalRent = state.mortgage + state.mgmt; // Plan A asking
-      const tenantActualPay = Math.max(0, askingTotalRent - subsidyAmount);
-
-      document.getElementById('sub-asking-rent').textContent = fmt(askingTotalRent);
-      document.getElementById('sub-deduct-amount').textContent = '- ' + fmt(subsidyAmount);
-      document.getElementById('sub-tenant-actual').textContent = fmt(tenantActualPay);
-    }
-
-    function setChartScenario(scenario) {
-      state.chartScenario = scenario;
+    function setChartScenario(sc) {
+      state.chartScenario = sc;
       ['a', 'c', 'd'].forEach(s => {
         const btn = document.getElementById(`btn-chart-${s}`);
         if (btn) {
-          if (s === scenario) {
+          if (s === sc) {
             btn.className = 'px-3 py-1 rounded-md transition bg-amber-500 text-gray-950 font-bold';
           } else {
             btn.className = 'px-3 py-1 rounded-md transition text-gray-300 hover:text-white';
@@ -1514,13 +1433,135 @@
       updateCashflowTable();
     }
 
+    function syncModalItemToMain(idx) {
+      const val = parseFloat(document.getElementById(`modal-item-${idx}`).value) || 0;
+      state.items[idx - 1] = val;
+      const sum = state.items.reduce((a, b) => a + b, 0);
+      state.capex = sum;
+      document.getElementById('input-capex').value = sum;
+      document.getElementById('slider-capex').value = sum;
+      document.getElementById('modal-total-display').innerText = fmt(sum);
+      calculateAll();
+    }
+
+    function syncMainItemToModal(idx) {
+      const val = parseFloat(document.getElementById(`capex-item-${idx}`).value) || 0;
+      state.items[idx - 1] = val;
+      const sum = state.items.reduce((a, b) => a + b, 0);
+      state.capex = sum;
+      document.getElementById('input-capex').value = sum;
+      document.getElementById('slider-capex').value = sum;
+      document.getElementById('modal-total-display').innerText = fmt(sum);
+      calculateAll();
+    }
+
+    function openBreakdownModal() {
+      const modal = document.getElementById('breakdown-modal');
+      syncItemInputs();
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeBreakdownModal() {
+      const modal = document.getElementById('breakdown-modal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function syncItemInputs() {
+      state.items.forEach((val, i) => {
+        const inpMain = document.getElementById(`capex-item-${i + 1}`);
+        const inpModal = document.getElementById(`modal-item-${i + 1}`);
+        if (inpMain) inpMain.value = val;
+        if (inpModal) inpModal.value = val;
+      });
+      const modalTotal = document.getElementById('modal-total-display');
+      if (modalTotal) modalTotal.innerText = fmt(state.capex);
+    }
+
+    function calculateAll() {
+      const rent = state.rent;
+      const mortgage = state.mortgage;
+      const mgmt = state.mgmt;
+      const capex = state.capex;
+      const years = state.years;
+      const months = years * 12;
+
+      // Update capex wan display
+      const wanDisplay = document.getElementById('capex-wan-display');
+      if (wanDisplay) {
+        if (currentLang === 'zh') wanDisplay.innerText = (capex / 10000).toFixed(1) + ' 萬元';
+        else if (currentLang === 'en') wanDisplay.innerText = 'NT$ ' + (capex >= 1000000 ? (capex/1000000).toFixed(2)+'M' : (capex/1000).toFixed(0)+'k');
+        else if (currentLang === 'ja') wanDisplay.innerText = (capex / 10000).toFixed(1) + '万元';
+      }
+
+      // Update months label
+      const monthsLabel = document.getElementById('amort-months-label');
+      if (monthsLabel) {
+        if (currentLang === 'zh') monthsLabel.innerText = `(共 ${months} 個月)`;
+        else if (currentLang === 'en') monthsLabel.innerText = `(${months} Months Total)`;
+        else if (currentLang === 'ja') monthsLabel.innerText = `(計 ${months} ヶ月)`;
+      }
+
+      // Item percentage breakdown
+      state.items.forEach((val, i) => {
+        const pctEl = document.getElementById(`item-pct-${i + 1}`);
+        if (pctEl) {
+          const pct = capex > 0 ? ((val / capex) * 100).toFixed(2) : 0;
+          pctEl.innerText = `${pct}%`;
+        }
+      });
+      const capexSumEl = document.getElementById('capex-sum-total');
+      if (capexSumEl) capexSumEl.innerText = fmt(capex);
+
+      // Monthly Amortization
+      const monthlyAmort = months > 0 ? (capex / months) : 0;
+      document.getElementById('sum-monthly-amort').innerText = fmt(monthlyAmort);
+
+      // Total Monthly Hard Outflow (Mortgage + Amortization + Mgmt + Reserve)
+      const totalOutflow = mortgage + monthlyAmort + mgmt + state.maintenanceReserve;
+      document.getElementById('sum-total-outflow').innerText = fmt(totalOutflow);
+
+      // Net Monthly Cashflow (Target Rent - Mortgage - Mgmt - Reserve)
+      const netCashflow = rent - mortgage - mgmt - state.maintenanceReserve;
+      const netCashflowEl = document.getElementById('sum-cashflow-monthly');
+      netCashflowEl.innerText = (netCashflow >= 0 ? '+ ' : '- ') + fmt(Math.abs(netCashflow));
+      netCashflowEl.className = 'text-2xl sm:text-3xl font-black font-mono ' + (netCashflow >= 0 ? 'text-emerald-400' : 'text-red-400');
+
+      // 5 Pricing Matrix Scenarios
+      const planA = mortgage + mgmt;
+      const planB = mortgage + mgmt + monthlyAmort;
+      const planC = rent + mgmt + monthlyAmort;
+      const planD = mortgage + mgmt + (monthlyAmort * 0.5);
+      const planE = mortgage + mgmt + monthlyAmort + 1000 + 2000 + 4667;
+
+      document.getElementById('price-plan-a').innerText = fmt(planA);
+      document.getElementById('price-plan-b').innerText = fmt(planB);
+      document.getElementById('price-plan-c').innerText = fmt(planC);
+      document.getElementById('price-plan-d').innerText = fmt(planD);
+      document.getElementById('price-plan-e').innerText = fmt(planE);
+
+      // Subsidy Simulator
+      const askingRent = planA;
+      const tenantActual = Math.max(0, askingRent - state.subsidy);
+      document.getElementById('sub-asking-rent').innerText = fmt(askingRent);
+      document.getElementById('sub-deduct-amount').innerText = `- ${fmt(state.subsidy)}`;
+      document.getElementById('sub-tenant-actual').innerHTML = `${fmt(tenantActual)} <span class="text-xs text-gray-400 font-normal">${currentLang === 'en' ? '/ Mo.' : '/ 月'}</span>`;
+
+      // Update Charts & Table
+      updateDoughnutChart(mortgage, monthlyAmort, mgmt, state.maintenanceReserve);
+      updateCashflowChart();
+      updateCashflowTable();
+      saveState();
+    }
+
     function initCharts() {
+      const loc = i18n[currentLang];
+
       // 1. Doughnut Chart
       const ctxDoughnut = document.getElementById('costDoughnutChart').getContext('2d');
       doughnutChart = new Chart(ctxDoughnut, {
         type: 'doughnut',
         data: {
-          labels: ['房貸本息', '裝潢月攤提', '社區管理費', '維護備用金'],
+          labels: loc.chartDoughnutLabels,
           datasets: [{
             data: [24000, 13333, 3000, 1000],
             backgroundColor: ['#ef4444', '#f59e0b', '#14b8a6', '#a855f7'],
@@ -1536,7 +1577,7 @@
               position: 'right',
               labels: {
                 color: '#9ca3af',
-                font: { size: 11, family: 'Inter, Noto Sans TC' },
+                font: { size: 11, family: 'Inter, Noto Sans TC, Noto Sans JP' },
                 boxWidth: 12
               }
             },
@@ -1557,10 +1598,10 @@
       cashflowChart = new Chart(ctxCashflow, {
         type: 'line',
         data: {
-          labels: ['第0年 (裝潢投入)', '第1年', '第2年', '第3年', '第4年', '第5年 (攤提期滿)'],
+          labels: [loc.chartYear0, loc.chartYearN(1), loc.chartYearN(2), loc.chartYearN(3), loc.chartYearN(4), loc.chartYearN(5)],
           datasets: [
             {
-              label: '累計淨現金流 (含收回80萬)',
+              label: loc.chartCashflowDataset0,
               data: [-800000, -652000, -504000, -356000, -208000, -60000],
               borderColor: '#fbbf24',
               backgroundColor: 'rgba(251, 191, 36, 0.12)',
@@ -1571,7 +1612,7 @@
               pointBackgroundColor: '#fbbf24'
             },
             {
-              label: '當期年租金收入',
+              label: loc.chartCashflowDataset1,
               data: [0, 472000, 472000, 472000, 472000, 472000],
               type: 'bar',
               backgroundColor: 'rgba(16, 185, 129, 0.35)',
@@ -1590,9 +1631,11 @@
           },
           plugins: {
             legend: {
+              position: 'top',
               labels: {
                 color: '#d1d5db',
-                font: { size: 12, family: 'Inter, Noto Sans TC' }
+                font: { size: 12, family: 'Inter, Noto Sans TC, Noto Sans JP' },
+                boxWidth: 14
               }
             },
             tooltip: {
@@ -1605,16 +1648,14 @@
           },
           scales: {
             x: {
-              grid: { color: 'rgba(255, 255, 255, 0.05)' },
+              grid: { color: 'rgba(255,255,255,0.05)' },
               ticks: { color: '#9ca3af', font: { size: 11 } }
             },
             y: {
-              grid: { color: 'rgba(255, 255, 255, 0.08)' },
+              grid: { color: 'rgba(255,255,255,0.05)' },
               ticks: {
                 color: '#9ca3af',
-                callback: function(val) {
-                  return (val / 10000) + '萬';
-                }
+                callback: function(v) { return (v/10000).toFixed(0) + (currentLang === 'en' ? '0k' : '萬'); }
               }
             }
           }
@@ -1624,6 +1665,7 @@
 
     function updateDoughnutChart(mortgage, amort, mgmt, reserve) {
       if (doughnutChart) {
+        doughnutChart.data.labels = i18n[currentLang].chartDoughnutLabels;
         doughnutChart.data.datasets[0].data = [mortgage, amort, mgmt, reserve];
         doughnutChart.update('none');
       }
@@ -1642,6 +1684,7 @@
 
     function updateCashflowChart() {
       if (!cashflowChart) return;
+      const loc = i18n[currentLang];
 
       const monthlyRent = getSelectedScenarioRent();
       const effectiveMonths = Math.max(0, 12 - state.vacancyMonths);
@@ -1651,19 +1694,21 @@
       const annualMaintenance = state.maintenanceReserve * 12;
       const annualNetCash = annualGross - annualMortgage - annualMgmt - annualMaintenance;
 
-      const labels = ['第0年 (裝潢投入)'];
+      const labels = [loc.chartYear0];
       const cumCashflowData = [-state.capex];
       const annualGrossData = [0];
 
       let cumCash = -state.capex;
       for (let y = 1; y <= 5; y++) {
-        labels.push(`第${y}年`);
+        labels.push(loc.chartYearN(y));
         cumCash += annualNetCash;
         cumCashflowData.push(Math.round(cumCash));
         annualGrossData.push(Math.round(annualGross));
       }
 
       cashflowChart.data.labels = labels;
+      cashflowChart.data.datasets[0].label = loc.chartCashflowDataset0;
+      cashflowChart.data.datasets[1].label = loc.chartCashflowDataset1;
       cashflowChart.data.datasets[0].data = cumCashflowData;
       cashflowChart.data.datasets[1].data = annualGrossData;
       cashflowChart.update('none');
@@ -1672,6 +1717,7 @@
     function updateCashflowTable() {
       const tbody = document.getElementById('table-cashflow-body');
       if (!tbody) return;
+      const loc = i18n[currentLang];
 
       const monthlyRent = getSelectedScenarioRent();
       const effectiveMonths = Math.max(0, 12 - state.vacancyMonths);
@@ -1686,12 +1732,12 @@
 
       let html = `
         <tr class="hover:bg-gray-800/40">
-          <td class="py-2.5 px-3 font-bold text-amber-400">第 0 年 (裝潢建置)</td>
+          <td class="py-2.5 px-3 font-bold text-amber-400">${loc.tableYear0}</td>
           <td class="py-2.5 px-3 text-right text-gray-500">NT$ 0</td>
           <td class="py-2.5 px-3 text-right text-gray-500">NT$ 0</td>
           <td class="py-2.5 px-3 text-right text-gray-500">NT$ 0</td>
           <td class="py-2.5 px-3 text-right text-red-400 font-bold">- ${fmt(state.capex)}</td>
-          <td class="py-2.5 px-3 text-center"><span class="px-2 py-0.5 rounded bg-red-500/20 text-red-300 text-[10px]">裝潢投入</span></td>
+          <td class="py-2.5 px-3 text-center"><span class="px-2 py-0.5 rounded bg-red-500/20 text-red-300 text-[10px]">${loc.tableYear0Badge}</span></td>
         </tr>
       `;
 
@@ -1704,12 +1750,12 @@
 
         const isPositive = cumNetCash >= 0;
         const statusBadge = isPositive 
-          ? `<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">✓ 淨賺現金</span>`
-          : `<span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 text-[10px]">累積淨值中</span>`;
+          ? `<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">${loc.badgeProfit}</span>`
+          : `<span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 text-[10px]">${loc.badgeEquity}</span>`;
 
         html += `
           <tr class="hover:bg-gray-800/40">
-            <td class="py-2.5 px-3 font-semibold text-white">第 ${y} 年營運</td>
+            <td class="py-2.5 px-3 font-semibold text-white">${loc.tableYearN(y)}</td>
             <td class="py-2.5 px-3 text-right font-mono">${fmt(cumGross)}</td>
             <td class="py-2.5 px-3 text-right font-mono text-red-400">- ${fmt(cumMortgage)}</td>
             <td class="py-2.5 px-3 text-right font-mono text-teal-400">- ${fmt(cumMgmt)}</td>
@@ -1724,6 +1770,8 @@
 
     function setLanguage(lang) {
       currentLang = lang;
+      const loc = i18n[lang];
+
       ['zh', 'en', 'ja'].forEach(l => {
         const btn = document.getElementById(`btn-lang-${l}`);
         if (btn) {
@@ -1735,12 +1783,28 @@
         }
       });
 
+      // Update text in all elements with data attributes
       document.querySelectorAll(`[data-${lang}]`).forEach(el => {
         const text = el.getAttribute(`data-${lang}`);
         if (text) {
           el.innerHTML = text;
         }
       });
+
+      // Update document title
+      if (loc && loc.docTitle) {
+        document.title = loc.docTitle;
+        const htmlTitle = document.getElementById('html-title');
+        if (htmlTitle) htmlTitle.innerText = loc.docTitle;
+      }
+
+      // Re-render charts and table in new language
+      if (doughnutChart) {
+        doughnutChart.data.labels = loc.chartDoughnutLabels;
+        doughnutChart.update('none');
+      }
+      updateCashflowChart();
+      updateCashflowTable();
 
       showToast(lang === 'zh' ? '已切換為繁體中文' : (lang === 'en' ? 'Switched to English' : '日本語に切り替えました'));
     }
@@ -1777,46 +1841,77 @@
       }
     }
 
+    function resetDefaults() {
+      state = {
+        rent: 23000,
+        mortgage: 24000,
+        mgmt: 3000,
+        capex: 800000,
+        years: 5,
+        vacancyMonths: 0.5,
+        maintenanceReserve: 1000,
+        subsidy: 5000,
+        chartScenario: 'c',
+        items: [250000, 200000, 180000, 110000, 60000]
+      };
+      document.getElementById('input-rent').value = 23000;
+      document.getElementById('slider-rent').value = 23000;
+      document.getElementById('input-mortgage').value = 24000;
+      document.getElementById('slider-mortgage').value = 24000;
+      document.getElementById('input-mgmt').value = 3000;
+      document.getElementById('slider-mgmt').value = 3000;
+      document.getElementById('input-capex').value = 800000;
+      document.getElementById('slider-capex').value = 800000;
+      document.getElementById('input-years').value = 5;
+      document.getElementById('slider-years').value = 5;
+      syncItemInputs();
+      calculateAll();
+      showToast(i18n[currentLang].toastReset);
+    }
+
     function copyExecutiveSummary() {
+      const loc = i18n[currentLang];
       const monthlyAmort = (state.capex / (state.years * 12));
       const planA = state.mortgage + state.mgmt;
       const planB = state.mortgage + state.mgmt + monthlyAmort;
       const planC = state.rent + state.mgmt + monthlyAmort;
       const planD = state.mortgage + state.mgmt + (monthlyAmort * 0.5);
 
-      const summaryText = `🏠【大成都 2F-1 租金、房貸與裝潢建置成本精算分析報告】
+      const rStr = Math.round(state.rent).toLocaleString();
+      const mStr = Math.round(state.mortgage).toLocaleString();
+      const mgStr = Math.round(state.mgmt).toLocaleString();
+      const cStr = Math.round(state.capex).toLocaleString();
+      const cWan = (state.capex/10000).toFixed(1);
+      const aStr = Math.round(monthlyAmort).toLocaleString();
+
+      const summaryText = `${loc.summaryHeader}
 ━━━━━━━━━━━━━━━━━━
-📊 基礎財務參數：
-• 每月目標租金：NT$ ${Math.round(state.rent).toLocaleString()} 元/月
-• 每月房貸本息：NT$ ${Math.round(state.mortgage).toLocaleString()} 元/月 (本金+利息)
-• 每月社區管理費：NT$ ${Math.round(state.mgmt).toLocaleString()} 元/月
-• 裝潢建置成本：NT$ ${(state.capex/10000).toFixed(1)} 萬元 (${Math.round(state.capex).toLocaleString()} 元)
-• 攤提折舊年限：${state.years} 年 (${state.years * 12} 個月)
-• 每月折舊攤提：NT$ ${Math.round(monthlyAmort).toLocaleString()} 元/月
+${loc.summaryParams}
+${loc.summaryRent(rStr)}
+${loc.summaryMortgage(mStr)}
+${loc.summaryMgmt(mgStr)}
+${loc.summaryCapex(cWan, cStr)}
+${loc.summaryYears(state.years, state.years * 12)}
+${loc.summaryAmort(aStr)}
 
-🎯 五大適合出租定價矩陣：
-👑【推薦首選・黃金全速回本價】：NT$ ${Math.round(planC).toLocaleString()} 元/月
-   (確保 5 年全額收回 80 萬裝潢款，扣除房貸後每月仍保有 NT$ 12,333 正現金流)
+${loc.summaryMatrix}
+${loc.summaryPlanC(Math.round(planC).toLocaleString())}
 
-⚡【市場甜蜜點・50%溢價快租價】：NT$ ${Math.round(planD).toLocaleString()} 元/月
-   (租金全額抵銷房貸與管理費，每月多收 NT$ 6,667 現金流回收裝潢)
+${loc.summaryPlanD(Math.round(planD).toLocaleString())}
 
-🛡️【房貸+管費現金流打平價】：NT$ ${Math.round(planA).toLocaleString()} 元/月
-   (零自掏腰包！租金完全吸收房貸與管理費，由租客供養整筆房貸積累房產淨值)
+${loc.summaryPlanA(Math.round(planA).toLocaleString())}
 
-💎【全成本保本底線價】：NT$ ${Math.round(planB).toLocaleString()} 元/月
-   (房貸 $24k + 管費 $3k + 裝潢攤提 $13.3k 全部由租金回收)
+${loc.summaryPlanB(Math.round(planB).toLocaleString())}
 
-🎁 租客 300 億補貼後實質負擔：
-• 租客申請第二級補助 $5,000 後，以方案 A 試算實際每月僅付：NT$ ${Math.round(planA - 5000).toLocaleString()} 元/月！
+${loc.summarySubsidy(Math.round(planA - 5000).toLocaleString())}
 ━━━━━━━━━━━━━━━━━━
-💡 試算系統：大成都 2F-1 PWA 精算系統 (House01/TryIT)`;
+${loc.summaryFooter}`;
 
       navigator.clipboard.writeText(summaryText).then(() => {
-        showToast(i18n[currentLang].toastCopied);
+        showToast(loc.toastCopied);
       }).catch(err => {
         console.error('Copy failed:', err);
-        showToast('複製失敗，請手動選取');
+        showToast(currentLang === 'zh' ? '複製失敗，請手動選取' : (currentLang === 'ja' ? 'コピーに失敗しました' : 'Copy failed, please copy manually'));
       });
     }
 
@@ -1828,7 +1923,7 @@
       document.body.appendChild(downloadAnchor);
       downloadAnchor.click();
       downloadAnchor.remove();
-      showToast('JSON 數據已成功匯出！');
+      showToast(i18n[currentLang].jsonExported);
     }
 
     function showToast(msg) {
