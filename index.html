@@ -109,7 +109,7 @@
     }
   </style>
 </head>
-<body class="antialiased text-gray-100 selection:bg-emerald-500 selection:text-white">
+<body class="antialiased text-gray-100 selection:bg-emerald-500 selection:text-white pb-20 md:pb-0">
 
   <!-- Toast Notification Container -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 px-5 py-3.5 rounded-xl bg-emerald-600 text-white shadow-2xl font-medium text-sm">
@@ -1488,6 +1488,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Friendly Fixed Bottom Action Bar (手機端常駐親和快捷導覽列) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-gray-950/95 backdrop-blur-xl border-t border-gray-800/80 px-3 py-2 pb-[max(0.6rem,env(safe-area-inset-bottom))] shadow-2xl no-print">
+    <div class="flex items-center justify-between gap-2 max-w-lg mx-auto">
+      <div class="flex items-center gap-1.5 flex-1">
+        <a href="tel:0975323161" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-gray-900 hover:bg-gray-800 active:scale-95 text-white border border-gray-700/60 text-center transition">
+          <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400 mb-0.5"></i>
+          <span class="text-[10px] font-medium" data-zh="撥打電話" data-en="Call" data-ja="電話">撥打電話</span>
+        </a>
+        <a href="https://line.me/ti/p/~0975323161" target="_blank" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-[#06C755]/15 hover:bg-[#06C755]/25 active:scale-95 text-[#06C755] border border-[#06C755]/30 text-center transition">
+          <i data-lucide="message-circle" class="w-4 h-4 text-[#06C755] mb-0.5"></i>
+          <span class="text-[10px] font-medium">加 LINE</span>
+        </a>
+        <a href="./TryIT/" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-orange-500/15 hover:bg-orange-500/25 active:scale-95 text-orange-400 border border-orange-500/30 text-center transition">
+          <i data-lucide="calculator" class="w-4 h-4 text-orange-400 mb-0.5"></i>
+          <span class="text-[10px] font-medium" data-zh="算租金" data-en="Calc" data-ja="精算">算租金</span>
+        </a>
+      </div>
+      <a href="#inquiry" class="flex items-center justify-center gap-1.5 py-2.5 px-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 active:scale-95 text-white text-xs font-bold shadow-lg shadow-emerald-950/50 transition">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+        <span data-zh="預約看屋" data-en="Book Visit" data-ja="内見予約">預約看屋</span>
+      </a>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script>
