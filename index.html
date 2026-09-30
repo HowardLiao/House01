@@ -145,7 +145,7 @@
           <a href="#sop-guidelines" class="hover:text-emerald-400 transition text-emerald-400 font-semibold" data-zh="帶看與管理規範" data-en="Viewing & SOP" data-ja="内見・管理規定">帶看與管理規範</a>
           <a href="#location" class="hover:text-emerald-400 transition" data-zh="生活機能" data-en="Location" data-ja="周辺環境">生活機能</a>
           <a href="#rules" class="hover:text-emerald-400 transition" data-zh="租賃公約" data-en="Rules" data-ja="賃貸規約">租賃公約</a>
-          <a href="#calculator" class="hover:text-emerald-400 transition" data-zh="費用試算" data-en="Calculator" data-ja="費用計算">費用試算</a>
+          <!-- <a href="#calculator" class="hover:text-emerald-400 transition" data-zh="費用試算" data-en="Calculator" data-ja="費用計算">費用試算</a> -->
         </nav>
 
         <!-- Action Buttons & Trilingual Switcher -->
@@ -187,7 +187,7 @@
       <a href="#sop-guidelines" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-emerald-400 hover:bg-emerald-500/10 font-semibold" data-zh="帶看與仲介管理說明書" data-en="Viewing & SOP Guidelines" data-ja="内見・仲介管理規定">帶看與仲介管理說明書</a>
       <a href="#location" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="周邊生活機能與交通" data-en="Location" data-ja="周辺環境・アクセス">周邊生活機能與交通</a>
       <a href="#rules" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="租賃規範與生活公約" data-en="Rules" data-ja="賃貸規約・ハウスルール">租賃規範與生活公約</a>
-      <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="每月預算費用試算" data-en="Calculator" data-ja="毎月の費用シミュレーション">每月預算費用試算</a>
+      <!-- <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg hover:bg-gray-800" data-zh="每月預算費用試算" data-en="Calculator" data-ja="毎月の費用シミュレーション">每月預算費用試算</a> -->
       <a href="https://rent.591.com.tw/21828684" target="_blank" class="block px-3 py-2 rounded-lg text-orange-400 hover:bg-orange-500/10" data-zh="591 房屋交易網 (R21828684) ↗" data-en="591 Taiwan Housing Listing (R21828684) ↗" data-ja="591 台湾不動産物件 (R21828684) ↗">591 房屋交易網 (R21828684) ↗</a>
     </div>
   </header>
@@ -1231,8 +1231,8 @@
     </div>
   </section>
 
-  <!-- Section 7: Interactive Rent & Expense Calculator -->
-  <section id="calculator" class="py-16 bg-gray-900/50 border-t border-b border-gray-800">
+  <!-- Section 7: Interactive Rent & Expense Calculator (Hidden) -->
+  <section id="calculator" class="hidden py-16 bg-gray-900/50 border-t border-b border-gray-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-10">
@@ -1326,13 +1326,13 @@
     </div>
   </section>
 
-  <!-- Section 8: Booking, Contact & Inquiry -->
+  <!-- Section 7: Booking, Contact & Inquiry -->
   <section id="booking" class="py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-10">
         <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider" data-zh="CONTACT & APPOINTMENT" data-en="CONTACT & APPOINTMENT" data-ja="CONTACT & APPOINTMENT">CONTACT & APPOINTMENT</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-zh="8. 預約看屋與聯絡方式" data-en="8. Schedule a Viewing & Contact" data-ja="8. 内見予約・お問い合わせ">8. 預約看屋與聯絡方式</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1" data-zh="7. 預約看屋與聯絡方式" data-en="7. Schedule a Viewing & Contact" data-ja="7. 内見予約・お問い合わせ">7. 預約看屋與聯絡方式</h2>
         <p class="text-sm text-gray-400 mt-1" data-zh="屋主直租（仲介勿擾），歡迎小家庭、上班族、科技主管預約賞屋" data-en="Direct by owner. Welcome students, families, and professionals to book a tour." data-ja="オーナー直募（仲介業者様はお控えください）。お気軽にお問い合わせください。">屋主直租（仲介勿擾），歡迎小家庭、上班族、科技主管預約賞屋</p>
       </div>
 
@@ -1492,21 +1492,17 @@
   <!-- Mobile Friendly Fixed Bottom Action Bar (手機端常駐親和快捷導覽列) -->
   <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-gray-950/95 backdrop-blur-xl border-t border-gray-800/80 px-3 py-2 pb-[max(0.6rem,env(safe-area-inset-bottom))] shadow-2xl no-print">
     <div class="flex items-center justify-between gap-2 max-w-lg mx-auto">
-      <div class="flex items-center gap-1.5 flex-1">
-        <a href="tel:0975323161" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-gray-900 hover:bg-gray-800 active:scale-95 text-white border border-gray-700/60 text-center transition">
-          <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400 mb-0.5"></i>
-          <span class="text-[10px] font-medium" data-zh="撥打電話" data-en="Call" data-ja="電話">撥打電話</span>
+      <div class="flex items-center gap-2 flex-1">
+        <a href="tel:0975323161" class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-gray-900 hover:bg-gray-800 active:scale-95 text-white border border-gray-700/60 text-center transition">
+          <i data-lucide="phone-call" class="w-4 h-4 text-emerald-400"></i>
+          <span class="text-xs font-semibold" data-zh="撥打電話" data-en="Call" data-ja="電話">撥打電話</span>
         </a>
-        <a href="https://line.me/ti/p/~0975323161" target="_blank" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-[#06C755]/15 hover:bg-[#06C755]/25 active:scale-95 text-[#06C755] border border-[#06C755]/30 text-center transition">
-          <i data-lucide="message-circle" class="w-4 h-4 text-[#06C755] mb-0.5"></i>
-          <span class="text-[10px] font-medium" data-zh="加 LINE" data-en="LINE" data-ja="LINE追加">加 LINE</span>
-        </a>
-        <a href="./TryIT/" class="flex-1 flex flex-col items-center justify-center py-1.5 px-1 rounded-xl bg-orange-500/15 hover:bg-orange-500/25 active:scale-95 text-orange-400 border border-orange-500/30 text-center transition">
-          <i data-lucide="calculator" class="w-4 h-4 text-orange-400 mb-0.5"></i>
-          <span class="text-[10px] font-medium" data-zh="算租金" data-en="Calc" data-ja="精算">算租金</span>
+        <a href="https://line.me/ti/p/~0975323161" target="_blank" class="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-[#06C755]/15 hover:bg-[#06C755]/25 active:scale-95 text-[#06C755] border border-[#06C755]/30 text-center transition">
+          <i data-lucide="message-circle" class="w-4 h-4 text-[#06C755]"></i>
+          <span class="text-xs font-semibold" data-zh="加 LINE" data-en="LINE" data-ja="LINE追加">加 LINE</span>
         </a>
       </div>
-      <a href="#inquiry" class="flex items-center justify-center gap-1.5 py-2.5 px-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 active:scale-95 text-white text-xs font-bold shadow-lg shadow-emerald-950/50 transition">
+      <a href="#inquiry" class="flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 active:scale-95 text-white text-xs font-bold shadow-lg shadow-emerald-950/50 transition">
         <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
         <span data-zh="預約看屋" data-en="Book Visit" data-ja="内見予約">預約看屋</span>
       </a>
